@@ -12,6 +12,7 @@ const PAGES = [
   { id: "Wellness", icon: "\u{1F4AA}" },
   { id: "Blog", icon: "\u{270D}\uFE0F" },
   { id: "Contact", icon: "\u{1F4E1}" },
+  { id: "Careers", icon: "\u{1F393}" },
   { id: "Resume", icon: "\u{1F4C4}" }
 ];
 
@@ -496,6 +497,64 @@ function ContactPage({ dark }) {
   );
 }
 
+function CareersPage({ dark }) {
+  const linkBtn = {display:"inline-block",background:"#C49060",color:"#FFF",padding:"10px 22px",borderRadius:6,textDecoration:"none",fontFamily:"'Courier New', monospace",fontSize:13,fontWeight:700,marginTop:14};
+  const h3 = {fontFamily:"'Courier New', monospace",fontSize:18,fontWeight:700,color:dark?"#F5E6D3":"#2D2926",margin:"0 0 10px"};
+  const body = {fontFamily:"'DM Sans', sans-serif",fontSize:14,color:dark?"#9E958A":"#8A7E72",margin:"0 0 10px",lineHeight:1.7};
+  const liStyle = {fontFamily:"'DM Sans', sans-serif",fontSize:14,color:dark?"#9E958A":"#8A7E72",lineHeight:1.7,marginBottom:6};
+  const codeStyle = {fontFamily:"'Courier New', monospace",fontSize:13,color:"#C49060",background:dark?"rgba(196,144,96,0.08)":"rgba(196,144,96,0.06)",padding:"1px 6px",borderRadius:3};
+  return (
+    <Section dark={dark} style={{ paddingTop: 100 }}>
+      <SectionHeader dark={dark} title="Careers" icon="scroll" sub="Free templates and a no-fluff guide to building a resume that won't get auto-rejected." />
+
+      <Card dark={dark}>
+        <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:8}}>
+          <PixelIcon type="scroll" size={20} />
+          <h3 style={h3}>Google Docs Resume Template</h3>
+        </div>
+        <p style={body}>A clean one-page template I share with students at Northeastern. Sections for Education, Skills, and Project / Work / Volunteer Experience, plus optional Mission Statement and Background blocks. In Google Docs, do <strong>File &rarr; Make a copy</strong> to start your own.</p>
+        <div style={{borderRadius:8,overflow:"hidden",border:"1px solid "+(dark?"rgba(196,144,96,0.15)":"rgba(196,144,96,0.12)"),background:"#FFFFFF",marginTop:12}}>
+          <iframe src="https://docs.google.com/document/d/1MyKi0G6va39nCABmK7Y9FUWh5oAgwUNSo3IriLvyX2g/preview" title="Resume template preview" style={{width:"100%",height:600,border:"none",display:"block"}} />
+        </div>
+        <a href="https://docs.google.com/document/d/1MyKi0G6va39nCABmK7Y9FUWh5oAgwUNSo3IriLvyX2g/edit" target="_blank" rel="noopener noreferrer" style={linkBtn}>open in google docs &rarr;</a>
+      </Card>
+
+      <Card dark={dark}>
+        <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:8}}>
+          <PixelIcon type="code" size={20} />
+          <h3 style={h3}>Notes for Students</h3>
+        </div>
+        <ul style={{paddingLeft:20,margin:"4px 0 0"}}>
+          <li style={liStyle}>Keep it to <strong>one page</strong>. Recruiters spend ~7 seconds on the first pass &mdash; don't make them scroll.</li>
+          <li style={liStyle}>Lead each bullet with an <strong>action verb</strong> (Built, Designed, Led, Analyzed) and end with a <strong>quantifiable outcome</strong> ("reduced runtime 40%", "supported 250+ users", "grew membership from 8 to 32").</li>
+          <li style={liStyle}>Order sections by what's strongest <em>for the role you're applying to</em>. Heavy project portfolio? Lead with Projects. New grad with internships? Lead with Experience.</li>
+          <li style={liStyle}>The footnote in the template is real: once you have ~2 substantial roles, add a Summary at the top, move Skills directly below it, and push Education to the bottom.</li>
+          <li style={liStyle}>Drop the Objective / Mission Statement unless the role explicitly cares (academia, fellowships, mission-driven nonprofits).</li>
+          <li style={liStyle}>Skills section: list tools you'd be comfortable being asked about in an interview. If it's on your resume, expect them to ask. If it isn't, don't expect them to.</li>
+          <li style={liStyle}>Export as <strong>PDF</strong> (never .docx) before sending. Naming convention: <span style={codeStyle}>Lastname_Firstname_Resume.pdf</span>.</li>
+          <li style={liStyle}>Run it past at least one person in the field you're targeting before sending. Northeastern co-op advisors and the Career Design office are free and underused.</li>
+        </ul>
+      </Card>
+
+      <Card dark={dark}>
+        <div style={{display:"flex",alignItems:"center",gap:10,marginBottom:8}}>
+          <PixelIcon type="pen" size={20} />
+          <h3 style={h3}>Upgrade Path: LaTeX Resume via Overleaf</h3>
+        </div>
+        <p style={body}>Once your resume settles into a stable structure, switching to LaTeX gives you sharper typography, perfectly consistent spacing, and version control that actually works. <strong>Overleaf</strong> is a browser-based LaTeX editor &mdash; no install needed.</p>
+        <ol style={{paddingLeft:20,margin:"6px 0 14px"}}>
+          <li style={liStyle}>Go to <span style={codeStyle}>overleaf.com</span> and click <em>Register</em>. The free tier is plenty for a resume; sign up with your Northeastern email if you want institutional perks.</li>
+          <li style={liStyle}>From the dashboard, open <em>Templates</em> &rarr; <em>CVs and Résumés</em>. Solid student-friendly options: <strong>Jake's Resume</strong>, <strong>Deedy CV</strong>, and <strong>Awesome CV</strong>. Click <em>Open as Template</em> on whichever fits your style.</li>
+          <li style={liStyle}>Edit the <span style={codeStyle}>main.tex</span> file in the left panel. The PDF preview rebuilds automatically on the right whenever you save.</li>
+          <li style={liStyle}>Download the PDF (top-right download icon) and you're done. Re-export every time you make changes &mdash; don't send the .tex file.</li>
+        </ol>
+        <p style={body}><em>Tip:</em> keep the Google Doc as your brainstorming surface (easier to draft and rewrite bullets) and treat the LaTeX version as the production renderer.</p>
+        <a href="https://www.overleaf.com" target="_blank" rel="noopener noreferrer" style={linkBtn}>open overleaf &rarr;</a>
+      </Card>
+    </Section>
+  );
+}
+
 function ResumePage({ dark }) {
   return (
     <Section dark={dark} style={{ paddingTop: 100 }}>
@@ -505,7 +564,10 @@ function ResumePage({ dark }) {
         <h3 style={{fontFamily:"'Courier New', monospace",fontSize:18,fontWeight:700,color:dark?"#F5E6D3":"#2D2926",margin:"16px 0 4px"}}>Amit Shenoy</h3>
         <p style={{fontFamily:"'DM Sans', sans-serif",fontSize:14,color:dark?"#9E958A":"#8A7E72",margin:"0 0 4px"}}>B.S. Bioengineering — Northeastern University (Dec 2025)</p>
         <p style={{fontFamily:"'Courier New', monospace",fontSize:13,color:"#C49060",margin:"0 0 20px"}}>GPA: 3.91 · Honors · Seeking July 2026</p>
-        <div style={{display:"inline-block",background:"rgba(196,144,96,0.08)",padding:"10px 20px",borderRadius:6,fontFamily:"'Courier New', monospace",fontSize:12,color:dark?"#8A7E72":"#9E958A",border:"1px solid rgba(196,144,96,0.1)"}}>PDF download — attach your resume to enable</div>
+        <div style={{display:"flex",gap:10,justifyContent:"center",flexWrap:"wrap"}}>
+          <a href={import.meta.env.BASE_URL + "26_05_02_Broad_Res_AS.pdf"} target="_blank" rel="noopener noreferrer" style={{display:"inline-block",background:"#C49060",color:"#FFF",padding:"10px 22px",borderRadius:6,textDecoration:"none",fontFamily:"'Courier New', monospace",fontSize:13,fontWeight:700}}>view resume.pdf &rarr;</a>
+          <a href={import.meta.env.BASE_URL + "26_05_02_Broad_Res_AS.pdf"} download="Shenoy_Amit_Resume.pdf" style={{display:"inline-block",background:"transparent",color:"#C49060",padding:"10px 22px",borderRadius:6,textDecoration:"none",fontFamily:"'Courier New', monospace",fontSize:13,fontWeight:700,border:"1px solid rgba(196,144,96,0.3)"}}>download &darr;</a>
+        </div>
       </Card>
       <div style={{ marginTop: 24 }}>
         <h3 style={{fontFamily:"'Courier New', monospace",fontSize:16,fontWeight:700,color:dark?"#F5E6D3":"#2D2926",margin:"0 0 12px"}}>skills --list</h3>
@@ -563,6 +625,7 @@ export default function App() {
       {page === "Wellness" && <WellnessPage dark={dark} />}
       {page === "Blog" && <BlogPage dark={dark} />}
       {page === "Contact" && <ContactPage dark={dark} />}
+      {page === "Careers" && <CareersPage dark={dark} />}
       {page === "Resume" && <ResumePage dark={dark} />}
       <footer style={{ textAlign: "center", padding: "32px 24px", position: "relative", zIndex: 1, borderTop: "1px solid " + (dark ? "rgba(196,144,96,0.08)" : "rgba(196,144,96,0.06)") }}>
         <p style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: dark ? "#6B5E52" : "#BEB5AA" }}>&copy; 2026 amit.sh &middot; built with care, caffeine, and an unreasonable number of terminal prompts</p>

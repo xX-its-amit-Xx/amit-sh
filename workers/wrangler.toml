@@ -1,0 +1,17 @@
+name = "amit-sh-recipe-form"
+main = "recipe-form.js"
+compatibility_date = "2024-11-01"
+
+# Non-secret config. Lock this to your site's origin once deployed:
+[vars]
+ALLOWED_ORIGIN = "https://xX-its-amit-Xx.github.io"
+
+# Secrets (set with `wrangler secret put <NAME>`, never commit them):
+#   NOTION_TOKEN            — a Notion integration secret with access to the DB
+#   NOTION_SUGGESTIONS_DB   — the target database id (create a "Suggestions" DB)
+#   TURNSTILE_SECRET        — optional, from the Cloudflare Turnstile dashboard
+
+# Optional per-IP rate limiting: create a KV namespace and uncomment:
+# [[kv_namespaces]]
+# binding = "RL"
+# id = "<your-kv-namespace-id>"

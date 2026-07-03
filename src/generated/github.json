@@ -1,0 +1,377 @@
+{
+  "featured": [
+    {
+      "name": "OpenADMET-pxr-challenge",
+      "description": "The winning submission for the OpenADMET pxr contest. Discord: https://discord.gg/UQqUFhN6bG Hugging Face: https://huggingface.co/spaces/openadmet/pxr-challenge",
+      "url": "https://github.com/xX-its-amit-Xx/OpenADMET-pxr-challenge",
+      "homepage": null,
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-07-02T19:59:45Z"
+    },
+    {
+      "name": "pxr-effector-uncoupling",
+      "description": "PXR is a high-value but undruggable-systemically target — agonists are therapeutic in IBD and MASH but toxic in liver via CYP3A4 induction. This project quantifies, across human cell types, which canonical PXR effectors stay tightly coupled to NR1I2 expression vs. which decouple -- gives tissue-specific readouts a selective PXR modulator can target",
+      "url": "https://github.com/xX-its-amit-Xx/pxr-effector-uncoupling",
+      "homepage": null,
+      "stars": 1,
+      "language": "HTML",
+      "topics": [],
+      "updated": "2026-05-31T12:03:56Z"
+    },
+    {
+      "name": "BayesBio",
+      "description": "Infers biological model parameters from noisy experimental data using Bayesian statistics, Markov Chain Monte Carlo, and clear visual diagnostics.",
+      "url": "https://github.com/xX-its-amit-Xx/BayesBio",
+      "homepage": null,
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-05-21T02:08:09Z"
+    },
+    {
+      "name": "ATAC-QC",
+      "description": "Processes ATAC-seq analysis outputs and generates interpretable QC metrics, plots, and reports. A clear educational and practical toolkit that wraps common analysis steps and explains QC.",
+      "url": "https://github.com/xX-its-amit-Xx/ATAC-QC",
+      "homepage": null,
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-05-21T02:08:07Z"
+    },
+    {
+      "name": "scRNA-flow",
+      "description": "Analyze a public single-cell RNA-seq dataset from raw or preprocessed count matrices, perform quality control, normalization, dimensionality reduction, clustering, marker gene detection, and generate a clean report.",
+      "url": "https://github.com/xX-its-amit-Xx/scRNA-flow",
+      "homepage": null,
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-05-21T02:08:06Z"
+    },
+    {
+      "name": "OmicsQC",
+      "description": "OmicsQC processes FASTQ and FASTA files and generates basic QC summaries, plots, and a clean HTML or Markdown report.",
+      "url": "https://github.com/xX-its-amit-Xx/OmicsQC",
+      "homepage": null,
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-05-21T02:08:05Z"
+    },
+    {
+      "name": "amit-sh",
+      "description": "~/amit.sh — personal hub. built with care, caffeine, and an unreasonable number of terminal prompts.",
+      "url": "https://github.com/xX-its-amit-Xx/amit-sh",
+      "homepage": null,
+      "stars": 1,
+      "language": "JavaScript",
+      "topics": [],
+      "updated": "2026-05-21T02:07:56Z"
+    }
+  ],
+  "all": [
+    {
+      "name": "OpenADMET-pxr-challenge",
+      "description": "The winning submission for the OpenADMET pxr contest. Discord: https://discord.gg/UQqUFhN6bG Hugging Face: https://huggingface.co/spaces/openadmet/pxr-challenge",
+      "url": "https://github.com/xX-its-amit-Xx/OpenADMET-pxr-challenge",
+      "homepage": null,
+      "stars": 1,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-07-02T19:59:45Z"
+    },
+    {
+      "name": "route_9_web_co",
+      "description": "Home of the best local web development in Shrewsbury MA (this claim is not verified by anyone with any credibility whatsoever)",
+      "url": "https://github.com/xX-its-amit-Xx/route_9_web_co",
+      "homepage": "https://route-9-web-co.vercel.app",
+      "stars": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated": "2026-07-02T16:02:20Z"
+    },
+    {
+      "name": "OpenADMET-pxr-structure",
+      "description": "OpenADMET PXR structure modeling experiments and final submission report.",
+      "url": "https://github.com/xX-its-amit-Xx/OpenADMET-pxr-structure",
+      "homepage": null,
+      "stars": 2,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-07-01T23:58:47Z"
+    },
+    {
+      "name": "OncoRNA-Flow",
+      "description": "OncoRNA-Flow is a reproducible Nextflow pipeline for tumor bulk RNA-Seq that integrates expression with somatic mutation calls to surface transcriptomic biomarkers of therapy response. For translational/clinical cancer-genomics teams and students who need a runnable, well-documented template for mutation-aware expression analysis.",
+      "url": "https://github.com/xX-its-amit-Xx/OncoRNA-Flow",
+      "homepage": null,
+      "stars": 0,
+      "language": "HTML",
+      "topics": [],
+      "updated": "2026-06-24T20:14:28Z"
+    },
+    {
+      "name": "hitloop",
+      "description": "Lab-in-the-Loop simulator for active-learning hit finding over Make-on-Demand chemical space. Swappable acquisition functions and drug–target interaction scorers; honest sample-efficiency benchmarks on public data. For computational chemists and ML-for-discovery researchers who want to know how much active learning actually saves before budgeting.",
+      "url": "https://github.com/xX-its-amit-Xx/hitloop",
+      "homepage": null,
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "updated": "2026-06-24T09:30:52Z"
+    },
+    {
+      "name": "cell-kg",
+      "description": "A tool for computational biologists who want to reason over integrated multi-omics evidence as a graph rather than as disconnected tables — nominate candidate regulators or gene edits for a desired cell state by link-prediction, with every prediction traceable back to its supporting edges for interpretability).",
+      "url": "https://github.com/xX-its-amit-Xx/cell-kg",
+      "homepage": null,
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated": "2026-06-23T14:14:25Z"
+    },
+    {
+      "name": "scp-benchmark",
+      "description": "A benchmarking harness for MS single-cell proteomics on AnnData. Calibrated MNAR/MAR/MCAR missingness simulation + standardized scoring (imputation reconstruction & induced bias, normalization, batch correction, downstream clustering/annotation) with held-out splits, & bootstrap CIs. For SCP method developers who need apples-to-apples comparisons.",
+      "url": "https://github.com/xX-its-amit-Xx/scp-benchmark",
+      "homepage": null,
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated": "2026-06-23T14:03:48Z"
+    },
+    {
+      "name": "scp-anndata-spec",
+      "description": "A proposed standard for representing MS single-cell proteomics in scverse AnnData: obs/var/layers/uns conventions (NaN = non-detected, never 0), acquisition-type metadata (TMT/plexDIA/LFQ/SILAC), provenance, and a reference validator. Spec doc + validate_scp_anndata() + round-trip converters to QFeatures/SingleCellExperiment. For the SCP community.",
+      "url": "https://github.com/xX-its-amit-Xx/scp-anndata-spec",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-23T13:48:57Z"
+    },
+    {
+      "name": "stereo-fate",
+      "description": "Tool for stem-cell and cell-therapy teams reverse-engineering differentiation recipes w/spatial data. It treats fate as a spatially-patterned decision, infers transcription-factors, cell-cell signaling cues, ranks them into a candidate \"ingredient list\", cross-checking each ingredient causally, Built for the iBlastoid/organoid era of cell therapy.",
+      "url": "https://github.com/xX-its-amit-Xx/stereo-fate",
+      "homepage": null,
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated": "2026-06-23T13:42:31Z"
+    },
+    {
+      "name": "diff-navigator",
+      "description": "Models a differentiation timecourse as a trajectory and runs in-silico perturbations to steer cell fate toward a target type.",
+      "url": "https://github.com/xX-its-amit-Xx/diff-navigator",
+      "homepage": null,
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "updated": "2026-06-23T12:49:00Z"
+    },
+    {
+      "name": "-scp-zoo",
+      "description": "A Python dataset hub for MS SCP: one-line loaders that fetch published SCP datasets (SCoPE2, leduc2022_pSCoPE, plexDIA, and more) to fetch schema-validated scverse AnnData objects. Bridges the R scpdata ecosystem to Python so the community can benchmark on common ground. For anyone who wants real SCP data in AnnData w/o writing a parser per paper.",
+      "url": "https://github.com/xX-its-amit-Xx/-scp-zoo",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-23T12:17:37Z"
+    },
+    {
+      "name": "scp-prep",
+      "description": "AnnData-native QC & preprocessing for mass-spec single-cell proteomics (SCP). MNAR-aware imputation, SCP normalization, batch/confounder correction, and reproducible HTML reports; scverse-compatible \"service\" package for the low-input MS regime. For SCP researchers who want scanpy-style ergonomics w/o the scRNA-seq assumption that missing = zero.",
+      "url": "https://github.com/xX-its-amit-Xx/scp-prep",
+      "homepage": null,
+      "stars": 0,
+      "language": "HTML",
+      "topics": [],
+      "updated": "2026-06-23T12:15:49Z"
+    },
+    {
+      "name": "scp-annotate",
+      "description": "Downstream analysis for MS single-cell proteomics on AnnData: sparse/MNAR-aware feature selection, protein-marker and reference-projection cell-type annotation, + benchmarking. Built for scverse interop so SCP clustering can ride scanpy/scvi-tools tooling. For SCP researchers who need RNA-quality downstream workflows w/o RNA-sized feature counts.",
+      "url": "https://github.com/xX-its-amit-Xx/scp-annotate",
+      "homepage": null,
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated": "2026-06-23T12:15:47Z"
+    },
+    {
+      "name": "cfQC",
+      "description": "Quality control for low-input cell-free DNA fragmentomics sequencing. Computes fragment-length spectra (the ~167 bp mononucleosome peak), genomic-DNA contamination, GC bias (with correction), and a built-in TSS-enrichment positive control — bundled into one MultiQC-style HTML report. The gate step before any cfDNA expression inference.",
+      "url": "https://github.com/xX-its-amit-Xx/cfQC",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-23T05:10:23Z"
+    },
+    {
+      "name": "cfExpress",
+      "description": "Infer gene- and pathway-level expression status from cell-free DNA whole-genome sequencing using nucleosome-footprint fragmentomics — window protection scores, nucleosome-depleted-region scores, and fragment-length features fed into gradient-boosted and 1D-CNN models. Reproducible + SHAP-interpretable, and benchmarked against Griffin/FinaleToolkit.",
+      "url": "https://github.com/xX-its-amit-Xx/cfExpress",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-23T05:10:12Z"
+    },
+    {
+      "name": "google-tasks-mcp",
+      "description": "Remote MCP server exposing Google Tasks as tools, on Cloudflare Workers",
+      "url": "https://github.com/xX-its-amit-Xx/google-tasks-mcp",
+      "homepage": "https://xx-its-amit-xx.github.io/google-tasks-mcp/",
+      "stars": 0,
+      "language": "TypeScript",
+      "topics": [],
+      "updated": "2026-06-20T23:24:33Z"
+    },
+    {
+      "name": "MetaBridge",
+      "description": "A small, opinionated metadata layer that sits between the wet lab and the dry lab. For small genomics/microbiome teams without a full LIMS who still need clean, validated, traceable sample metadata.",
+      "url": "https://github.com/xX-its-amit-Xx/MetaBridge",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-17T15:49:17Z"
+    },
+    {
+      "name": "runlab",
+      "description": "Package published biology models (ODE/SBML, stochastic, ML/ONNX, and mechanistic) into standardized, runnable, validated \"labs\" with one uniform CLI. Reproduce a paper's result in one command, inspect every step, and adapt it.",
+      "url": "https://github.com/xX-its-amit-Xx/runlab",
+      "homepage": null,
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "updated": "2026-06-17T15:35:33Z"
+    },
+    {
+      "name": "StrainFlow",
+      "description": "A reproducible, cloud-native shotgun-metagenomics pipeline that takes raw reads to strain-resolved, analysis-ready outputs. For microbiome labs and TechBio teams who need read-level strain resolution but don't want to hand-wire ten tools. ",
+      "url": "https://github.com/xX-its-amit-Xx/StrainFlow",
+      "homepage": null,
+      "stars": 0,
+      "language": "Nextflow",
+      "topics": [],
+      "updated": "2026-06-17T15:31:28Z"
+    },
+    {
+      "name": "-alphaXiv-x-marimo",
+      "description": "Explores the alphaXiv paper base, identifies a paper set that jives with my interests, and builds a beautiful marimo notebook to make the methods digestible/learnable. Part of the alphaXiv x marimo build competition (https://marimo.io/pages/events/notebook-competition-2)",
+      "url": "https://github.com/xX-its-amit-Xx/-alphaXiv-x-marimo",
+      "homepage": null,
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "updated": "2026-06-17T14:31:13Z"
+    },
+    {
+      "name": "xAI_KG_via_INDRA",
+      "description": "Generic knowledge graphs represent drugs as a network of proteins, genes, and phenotypes (diseases). Nodes often represent strength of a connection, but not the type e.g. \"phosphorylates\", \"agonizes\". We explore the gain of INDRA-derived KGs with rigorous benchmarking & industry-backed validation in the neuromuscular space first, open to expansion.",
+      "url": "https://github.com/xX-its-amit-Xx/xAI_KG_via_INDRA",
+      "homepage": null,
+      "stars": 0,
+      "language": null,
+      "topics": [],
+      "updated": "2026-06-12T18:36:15Z"
+    },
+    {
+      "name": "therapy-stack",
+      "description": "An open-source stack for AI-driven therapeutic strategy   hypothesis generation, with reproducible evaluation",
+      "url": "https://github.com/xX-its-amit-Xx/therapy-stack",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-12T11:12:08Z"
+    },
+    {
+      "name": "binder-bench",
+      "description": "A reproducible benchmark and runnable pipeline for de novo protein binder design. For protein engineers and computational biologists evaluating design tools: it standardizes the generate→design→filter loop and reports honest success metrics (self-consistency RMSD, pLDDT, in-silico interface scores) instead of cherry-picked hits.",
+      "url": "https://github.com/xX-its-amit-Xx/binder-bench",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-09T11:22:10Z"
+    },
+    {
+      "name": "foldchain",
+      "description": "A composable orchestration layer for open-source structural-biology tools. For computational biologists and bench scientists who want to chain structure prediction, docking, and scoring without wiring together five incompatible CLIs and GPU environments by hand.",
+      "url": "https://github.com/xX-its-amit-Xx/foldchain",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-09T11:21:39Z"
+    },
+    {
+      "name": "mol-pilot",
+      "description": "A model-agnostic design copilot that wraps any molecular property model behind an interpretable interface for medicinal chemists. For bench/med chemists who have predictive models but no chemist-friendly way to use them; brings together ADMET models & chemist design decisions via interpretability, retrieval, & synthesizable suggestions in one UI.",
+      "url": "https://github.com/xX-its-amit-Xx/mol-pilot",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-09T11:21:04Z"
+    },
+    {
+      "name": "probe-esm",
+      "description": "An open, reproducible toolkit for mechanistic interpretability of protein language models. For ML-for-biology researchers and structural biologists who care how ESM-like models learn. Provides linear probes, sparse autoencoders, & attention-contact analysis that map model internals to known biology so the field can audit & mine foundation models.",
+      "url": "https://github.com/xX-its-amit-Xx/probe-esm",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-08T17:10:41Z"
+    },
+    {
+      "name": "nano-plm",
+      "description": "Nano-PLM: a minimal, readable, single-config protein language model training framework for researchers who want to prototype architectural ideas fast. For ML-for-bio researchers and engineers who find ESM/ProGen too heavy to fork.",
+      "url": "https://github.com/xX-its-amit-Xx/nano-plm",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-04T07:36:00Z"
+    },
+    {
+      "name": "scfoundry",
+      "description": "LLM vs. PCA; a toolkit for comp-bio teams deciding whether a single-cell foundation model is worth the compute. Each model (Geneformer, scGPT) ships its own preprocessing, tokenization, and API; scFoundry wraps them behind one interface so you can extract embeddings, fine-tune on a downstream task, and compare honestly against classical baselines.",
+      "url": "https://github.com/xX-its-amit-Xx/scfoundry",
+      "homepage": null,
+      "stars": 0,
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "updated": "2026-06-04T07:18:45Z"
+    },
+    {
+      "name": "cellboard",
+      "description": "Cellboard is for wet-lab scientists who want to QC their own single-cell data without writing R. It loads a SingleCellExperiment/Seurat object, computes standard QC (mitochondrial %, gene/UMI counts, doublet flags), & exposes interactive thresholding through a Shiny UI. Automatically sets cutoffs, visualizes lost cells, & generates a report.",
+      "url": "https://github.com/xX-its-amit-Xx/cellboard",
+      "homepage": null,
+      "stars": 0,
+      "language": "R",
+      "topics": [],
+      "updated": "2026-06-04T07:17:34Z"
+    },
+    {
+      "name": "cellscope",
+      "description": "CellScope is a lightweight, self-hostable single-cell RNA-seq explorer for labs that want CELLxGENE-style interactivity without standing up heavy infrastructure. It's for bench and computational biologists who have an .h5ad and want to click through it (color by gene, re-cluster a subset, lasso-select cells) via browser, at million-cell scale.",
+      "url": "https://github.com/xX-its-amit-Xx/cellscope",
+      "homepage": null,
+      "stars": 0,
+      "language": "Python",
+      "topics": [],
+      "updated": "2026-06-04T07:07:25Z"
+    }
+  ],
+  "fetchedAt": "2026-07-02T20:18:28.189Z"
+}

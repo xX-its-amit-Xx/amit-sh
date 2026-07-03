@@ -1,0 +1,23 @@
+{
+  "_comment": "Non-secret integration settings. Secrets (tokens) come from environment variables / GitHub Actions secrets, never here. See INTEGRATION.md.",
+  "github": {
+    "user": "xX-its-amit-Xx",
+    "featured": "own-starred",
+    "includeForks": false,
+    "includeArchived": false,
+    "maxAll": 30
+  },
+  "substack": {
+    "publication": "knowledgegraphlover",
+    "maxPosts": 6
+  },
+  "notion": {
+    "mealsDbEnv": "NOTION_MEALS_DB",
+    "workoutsDbEnv": "NOTION_WORKOUTS_DB"
+  },
+  "obsidian": {
+    "repo": "",
+    "branch": "main",
+    "tokenEnv": "VAULT_TOKEN"
+  }
+}

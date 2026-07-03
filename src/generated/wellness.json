@@ -1,0 +1,1763 @@
+{
+  "meals": [
+    {
+      "name": "Citrus–Olive Oil–Capers Dressing",
+      "detail": "Protein: 0g | Carbs: 3g | Fat: 9g | Calories: ~90 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Bright",
+        "Savory",
+        "Herby",
+        "Vitamin C",
+        "Vitamin E",
+        "Sauce/Dressing"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Bright",
+          "Savory",
+          "Herby"
+        ],
+        "Key Micronutrients": [
+          "Vitamin C",
+          "Vitamin E"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Citrus-Olive-Oil-Capers-Dressing-359b647699e88185913debeb6199bf76"
+    },
+    {
+      "name": "Miso–Ginger–Sesame Sauce",
+      "detail": "Protein: 2g | Carbs: 4g | Fat: 4g | Calories: ~60 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Umami",
+        "Savory",
+        "Earthy",
+        "Bright",
+        "Probiotics",
+        "Zinc"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Umami",
+          "Savory",
+          "Earthy",
+          "Bright"
+        ],
+        "Key Micronutrients": [
+          "Probiotics",
+          "Zinc",
+          "Manganese",
+          "B Vitamins"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Japanese",
+          "Asian"
+        ]
+      },
+      "link": "https://app.notion.com/p/Miso-Ginger-Sesame-Sauce-359b647699e881e2b3b5d3ca47519b89"
+    },
+    {
+      "name": "Miso-Harissa Salmon Sheet Pan",
+      "detail": "Protein: 38g | Carbs: 32g | Fat: 18g | Calories: ~445 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Spicy",
+        "Smoky",
+        "Omega-3",
+        "Vitamin D"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Spicy",
+          "Smoky"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Vitamin D",
+          "Vitamin B12",
+          "Vitamin A",
+          "Vitamin C",
+          "Selenium"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Asian-Fusion",
+          "Mediterranean",
+          "North African"
+        ]
+      },
+      "link": "https://app.notion.com/p/Miso-Harissa-Salmon-Sheet-Pan-359b647699e8814e8916ceffb33fe4a7"
+    },
+    {
+      "name": "Salsa Verde (Herb-Forward)",
+      "detail": "Protein: 1g | Carbs: 4g | Fat: 4g | Calories: ~55 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Bright",
+        "Herby",
+        "Savory",
+        "Tangy",
+        "Vitamin C",
+        "Vitamin K"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Bright",
+          "Herby",
+          "Savory",
+          "Tangy"
+        ],
+        "Key Micronutrients": [
+          "Vitamin C",
+          "Vitamin K",
+          "Iron"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Mexican",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Salsa-Verde-Herb-Forward-359b647699e88166bcccf4222c06bbd4"
+    },
+    {
+      "name": "Three-Bean Turkey (or Lentil) Chili",
+      "detail": "Protein: 38g | Carbs: 52g | Fat: 12g | Calories: ~475 kcal",
+      "tags": [
+        "Savory",
+        "Spicy",
+        "Smoky",
+        "Earthy",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Spicy",
+          "Smoky",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Fiber",
+          "Zinc",
+          "Magnesium",
+          "Vitamin C"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "American",
+          "Mexican"
+        ]
+      },
+      "link": "https://app.notion.com/p/Three-Bean-Turkey-or-Lentil-Chili-359b647699e8817c9b4ef8c462cfd067"
+    },
+    {
+      "name": "Chimichurri Chicken + Farro + Roasted Brussels Sprouts",
+      "detail": "Protein: 42g | Carbs: 48g | Fat: 18g | Calories: ~525 kcal",
+      "tags": [
+        "Savory",
+        "Herby",
+        "Bright",
+        "Earthy",
+        "Iron",
+        "Vitamin K"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Herby",
+          "Bright",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Vitamin K",
+          "Vitamin C",
+          "B Vitamins",
+          "Zinc",
+          "Selenium"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Chimichurri-Chicken-Farro-Roasted-Brussels-Sprouts-359b647699e881379e52cce24accd103"
+    },
+    {
+      "name": "Baked Cinnamon Pears with Yogurt & Pistachios",
+      "detail": "Protein: 10g | Carbs: 40g | Fat: 6g | Calories: ~250 kcal",
+      "tags": [
+        "Sweet",
+        "Creamy",
+        "Earthy",
+        "Nutty",
+        "Calcium",
+        "Probiotics"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Creamy",
+          "Earthy",
+          "Nutty"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Probiotics",
+          "Vitamin C",
+          "Fiber",
+          "Vitamin K"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "European",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Baked-Cinnamon-Pears-with-Yogurt-Pistachios-359b647699e88162a5fccbc10e0fc154"
+    },
+    {
+      "name": "Greek Yogurt \"Cheesecake\" Cup",
+      "detail": "Protein: 15g | Carbs: 18g | Fat: 8g | Calories: ~205 kcal",
+      "tags": [
+        "Sweet",
+        "Creamy",
+        "Bright",
+        "Nutty",
+        "Calcium",
+        "Probiotics"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Creamy",
+          "Bright",
+          "Nutty"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Probiotics",
+          "Antioxidants",
+          "Omega-3"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "American",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Greek-Yogurt-Cheesecake-Cup-359b647699e881e69dbaef2c61c85c5c"
+    },
+    {
+      "name": "Thai-Inspired Peanut–Lime Soba Salad",
+      "detail": "Protein: 22g | Carbs: 55g | Fat: 18g | Calories: ~465 kcal",
+      "tags": [
+        "Savory",
+        "Nutty",
+        "Bright",
+        "Spicy",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Nutty",
+          "Bright",
+          "Spicy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Vitamin C",
+          "Manganese",
+          "Magnesium",
+          "Zinc"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Asian",
+          "Asian-Fusion"
+        ]
+      },
+      "link": "https://app.notion.com/p/Thai-Inspired-Peanut-Lime-Soba-Salad-359b647699e88170b1a7e8067b56ed81"
+    },
+    {
+      "name": "Bibimbap-Style Bowl",
+      "detail": "Protein: 32g | Carbs: 50g | Fat: 14g | Calories: ~450 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Spicy",
+        "Earthy",
+        "Iron",
+        "Zinc"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Spicy",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Zinc",
+          "Vitamin C",
+          "B Vitamins",
+          "Manganese",
+          "Vitamin K"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Korean",
+          "Asian"
+        ]
+      },
+      "link": "https://app.notion.com/p/Bibimbap-Style-Bowl-359b647699e881d8b0fde32c2a798adf"
+    },
+    {
+      "name": "Shakshuka Upgrade with Chickpeas & Greens",
+      "detail": "Protein: 27g | Carbs: 50g | Fat: 16g | Calories: ~450 kcal",
+      "tags": [
+        "Savory",
+        "Spicy",
+        "Bright",
+        "Smoky",
+        "Vitamin C",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Spicy",
+          "Bright",
+          "Smoky"
+        ],
+        "Key Micronutrients": [
+          "Vitamin C",
+          "Iron",
+          "Folate",
+          "Lycopene",
+          "Vitamin B12",
+          "Vitamin K"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Middle Eastern",
+          "Mediterranean",
+          "North African"
+        ]
+      },
+      "link": "https://app.notion.com/p/Shakshuka-Upgrade-with-Chickpeas-Greens-359b647699e881e3b388f88800226510"
+    },
+    {
+      "name": "Mushroom–Barley \"Risotto\"",
+      "detail": "Protein: 14g | Carbs: 52g | Fat: 12g | Calories: ~370 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Earthy",
+        "Creamy",
+        "B Vitamins",
+        "Selenium"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Earthy",
+          "Creamy"
+        ],
+        "Key Micronutrients": [
+          "B Vitamins",
+          "Selenium",
+          "Iron",
+          "Zinc",
+          "Magnesium",
+          "Phosphorus"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "European",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Mushroom-Barley-Risotto-359b647699e881338479c75b534b6342"
+    },
+    {
+      "name": "Chicken Shawarma Salad Plate",
+      "detail": "Protein: 40g | Carbs: 30g | Fat: 20g | Calories: ~460 kcal",
+      "tags": [
+        "Savory",
+        "Smoky",
+        "Herby",
+        "Bright",
+        "Iron",
+        "Vitamin C"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Smoky",
+          "Herby",
+          "Bright"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Vitamin C",
+          "Calcium",
+          "B Vitamins",
+          "Zinc",
+          "Selenium"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Middle Eastern",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Chicken-Shawarma-Salad-Plate-359b647699e881588594c039a0d0cd53"
+    },
+    {
+      "name": "Baked Tofu \"Caprese-ish\" with Roasted Zucchini & White Beans",
+      "detail": "Protein: 24g | Carbs: 35g | Fat: 16g | Calories: ~380 kcal",
+      "tags": [
+        "Savory",
+        "Bright",
+        "Herby",
+        "Earthy",
+        "Calcium",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Bright",
+          "Herby",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Iron",
+          "Vitamin K",
+          "Vitamin C",
+          "Folate",
+          "Manganese"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Baked-Tofu-Caprese-ish-with-Roasted-Zucchini-White-Beans-359b647699e881659645c935ed4d9e92"
+    },
+    {
+      "name": "Roasted Veg, Lentil & Quinoa Bowl",
+      "detail": "Protein: 18g | Carbs: 55g | Fat: 14g | Calories: ~410 kcal",
+      "tags": [
+        "Earthy",
+        "Nutty",
+        "Bright",
+        "Savory",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Earthy",
+          "Nutty",
+          "Bright",
+          "Savory"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Magnesium",
+          "Zinc",
+          "Fiber",
+          "Vitamin K"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Roasted-Veg-Lentil-Quinoa-Bowl-359b647699e881058964db32cf55e755"
+    },
+    {
+      "name": "Savory Oats \"Umami Bowl\"",
+      "detail": "Protein: 24g | Carbs: 44g | Fat: 18g | Calories: ~435 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Nutty",
+        "Earthy",
+        "Iron",
+        "Vitamin K"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Nutty",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Vitamin K",
+          "Selenium",
+          "B Vitamins",
+          "Zinc",
+          "Calcium"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Asian",
+          "Japanese",
+          "Asian-Fusion"
+        ]
+      },
+      "link": "https://app.notion.com/p/Savory-Oats-Umami-Bowl-359b647699e88105a0d5e66a8f88bd15"
+    },
+    {
+      "name": "Tahini–Lemon–Garlic Sauce",
+      "detail": "Protein: 4g | Carbs: 6g | Fat: 10g | Calories: ~130 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Nutty",
+        "Bright",
+        "Savory",
+        "Earthy",
+        "Calcium",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Nutty",
+          "Bright",
+          "Savory",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Iron",
+          "Magnesium",
+          "Zinc",
+          "B Vitamins"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Middle Eastern",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Tahini-Lemon-Garlic-Sauce-359b647699e881b2b409c1a2cc393b2d"
+    },
+    {
+      "name": "Moroccan Chickpea Stew with Side Salad",
+      "detail": "Protein: 18g | Carbs: 58g | Fat: 12g | Calories: ~415 kcal",
+      "tags": [
+        "Savory",
+        "Earthy",
+        "Bright",
+        "Smoky",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Earthy",
+          "Bright",
+          "Smoky"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Vitamin C",
+          "Vitamin K",
+          "Fiber",
+          "Magnesium"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "North African",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Moroccan-Chickpea-Stew-with-Side-Salad-359b647699e8814c9cbbe3314cdbc02c"
+    },
+    {
+      "name": "Sweet Potato & Black Bean Breakfast Burrito",
+      "detail": "Protein: 24g | Carbs: 60g | Fat: 14g | Calories: ~460 kcal",
+      "tags": [
+        "Savory",
+        "Spicy",
+        "Bright",
+        "Smoky",
+        "Vitamin A",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Spicy",
+          "Bright",
+          "Smoky"
+        ],
+        "Key Micronutrients": [
+          "Vitamin A",
+          "Folate",
+          "Iron",
+          "Vitamin C",
+          "Potassium",
+          "Fiber"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Mexican",
+          "American",
+          "Tex-Mex"
+        ]
+      },
+      "link": "https://app.notion.com/p/Sweet-Potato-Black-Bean-Breakfast-Burrito-359b647699e88175884ed6e717ee557d"
+    },
+    {
+      "name": "Harissa–Tomato Vinaigrette",
+      "detail": "Protein: 1g | Carbs: 4g | Fat: 8g | Calories: ~90 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Spicy",
+        "Smoky",
+        "Savory",
+        "Bright",
+        "Vitamin C",
+        "Lycopene"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Spicy",
+          "Smoky",
+          "Savory",
+          "Bright"
+        ],
+        "Key Micronutrients": [
+          "Vitamin C",
+          "Lycopene",
+          "Vitamin E"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "North African",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Harissa-Tomato-Vinaigrette-359b647699e881d191b6d18c8293bfd4"
+    },
+    {
+      "name": "Tomato–Lentil Soup (Meal-Prep Friendly)",
+      "detail": "Protein: 18g | Carbs: 48g | Fat: 8g | Calories: ~335 kcal",
+      "tags": [
+        "Savory",
+        "Earthy",
+        "Bright",
+        "Smoky",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Earthy",
+          "Bright",
+          "Smoky"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Lycopene",
+          "Vitamin C",
+          "Vitamin K",
+          "Fiber"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Tomato-Lentil-Soup-Meal-Prep-Friendly-359b647699e881dc85e7e0b941526b53"
+    },
+    {
+      "name": "Chia Cocoa Pudding",
+      "detail": "Protein: 8g | Carbs: 22g | Fat: 10g | Calories: ~210 kcal",
+      "tags": [
+        "Sweet",
+        "Creamy",
+        "Earthy",
+        "Calcium",
+        "Omega-3",
+        "Magnesium"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Creamy",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Omega-3",
+          "Magnesium",
+          "Iron",
+          "Phosphorus"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Chia-Cocoa-Pudding-359b647699e881f984e9e08894732adf"
+    },
+    {
+      "name": "Black Bean, Corn & Mango Quinoa Salad",
+      "detail": "Protein: 16g | Carbs: 58g | Fat: 12g | Calories: ~400 kcal",
+      "tags": [
+        "Sweet",
+        "Bright",
+        "Savory",
+        "Herby",
+        "Folate",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Bright",
+          "Savory",
+          "Herby"
+        ],
+        "Key Micronutrients": [
+          "Folate",
+          "Iron",
+          "Vitamin C",
+          "Magnesium",
+          "Fiber",
+          "Antioxidants"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Mexican",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Black-Bean-Corn-Mango-Quinoa-Salad-359b647699e88118bc81f2208278ef94"
+    },
+    {
+      "name": "Ginger–Scallion Stir-Fry with Soba or Brown Rice",
+      "detail": "Protein: 22g | Carbs: 40g | Fat: 14g | Calories: ~375 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Bright",
+        "Earthy",
+        "Iron",
+        "Calcium"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Bright",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Calcium",
+          "Zinc",
+          "Manganese",
+          "Vitamin C",
+          "B Vitamins"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Asian",
+          "Asian-Fusion"
+        ]
+      },
+      "link": "https://app.notion.com/p/Ginger-Scallion-Stir-Fry-with-Soba-or-Brown-Rice-359b647699e88126a7fcfc32fd2948ee"
+    },
+    {
+      "name": "Mediterranean Tuna & White Bean Salad",
+      "detail": "Protein: 35g | Carbs: 30g | Fat: 15g | Calories: ~390 kcal",
+      "tags": [
+        "Savory",
+        "Bright",
+        "Umami",
+        "Herby",
+        "Omega-3",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Bright",
+          "Umami",
+          "Herby"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Iron",
+          "Calcium",
+          "Vitamin C",
+          "Folate",
+          "Vitamin B12"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Mediterranean-Tuna-White-Bean-Salad-359b647699e881eab697dc0c341cd02d"
+    },
+    {
+      "name": "Salmon \"Nori Bowl\"",
+      "detail": "Protein: 35g | Carbs: 45g | Fat: 16g | Calories: ~465 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Bright",
+        "Earthy",
+        "Omega-3",
+        "Vitamin D"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Bright",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Vitamin D",
+          "Vitamin B12",
+          "Iodine",
+          "Selenium",
+          "Iron"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Japanese",
+          "Asian"
+        ]
+      },
+      "link": "https://app.notion.com/p/Salmon-Nori-Bowl-359b647699e881e7a0deedcd97832c81"
+    },
+    {
+      "name": "Spinach Dal + Brown Rice + Cucumber Raita",
+      "detail": "Protein: 20g | Carbs: 60g | Fat: 10g | Calories: ~410 kcal",
+      "tags": [
+        "Savory",
+        "Earthy",
+        "Herby",
+        "Tangy",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Earthy",
+          "Herby",
+          "Tangy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Vitamin K",
+          "Calcium",
+          "Magnesium",
+          "Probiotics"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Indian"
+        ]
+      },
+      "link": "https://app.notion.com/p/Spinach-Dal-Brown-Rice-Cucumber-Raita-359b647699e8810c8b9ccbe535bba2d0"
+    },
+    {
+      "name": "Roasted Chickpeas (Sweet–Spicy)",
+      "detail": "Protein: 8g | Carbs: 26g | Fat: 6g | Calories: ~190 kcal",
+      "tags": [
+        "Savory",
+        "Spicy",
+        "Smoky",
+        "Earthy",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Spicy",
+          "Smoky",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Fiber",
+          "Manganese",
+          "Zinc"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Roasted-Chickpeas-Sweet-Spicy-359b647699e881a1be59dee16ef55625"
+    },
+    {
+      "name": "Cottage Cheese \"Mediterranean Bowl\"",
+      "detail": "Protein: 24g | Carbs: 22g | Fat: 14g | Calories: ~310 kcal",
+      "tags": [
+        "Savory",
+        "Bright",
+        "Herby",
+        "Creamy",
+        "Calcium",
+        "Selenium"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Bright",
+          "Herby",
+          "Creamy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Selenium",
+          "Vitamin K",
+          "Vitamin C",
+          "Iron",
+          "B12"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Cottage-Cheese-Mediterranean-Bowl-359b647699e881ffb13cff97b7662be2"
+    },
+    {
+      "name": "Sardine Puttanesca Pasta Salad",
+      "detail": "Protein: 28g | Carbs: 50g | Fat: 16g | Calories: ~455 kcal",
+      "tags": [
+        "Savory",
+        "Umami",
+        "Bright",
+        "Spicy",
+        "Omega-3",
+        "Vitamin B12"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Umami",
+          "Bright",
+          "Spicy"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Vitamin B12",
+          "Iron",
+          "Calcium",
+          "Vitamin D",
+          "Selenium"
+        ],
+        "Category": [
+          "Lunch"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Sardine-Puttanesca-Pasta-Salad-359b647699e88128879ff46bd8649570"
+    },
+    {
+      "name": "Frozen Berry–Kefir Smoothie",
+      "detail": "Protein: 12g | Carbs: 28g | Fat: 4g | Calories: ~195 kcal",
+      "tags": [
+        "Sweet",
+        "Bright",
+        "Tangy",
+        "Creamy",
+        "Calcium",
+        "Probiotics"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Bright",
+          "Tangy",
+          "Creamy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Probiotics",
+          "Antioxidants",
+          "Omega-3",
+          "Vitamin C",
+          "Folate"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "American",
+          "European"
+        ]
+      },
+      "link": "https://app.notion.com/p/Frozen-Berry-Kefir-Smoothie-359b647699e8815dbb5cf6da4d8c6434"
+    },
+    {
+      "name": "Gochujang-Lime Glaze (Light)",
+      "detail": "Protein: 1g | Carbs: 6g | Fat: 1g | Calories: ~40 kcal (per 1 tbsp serving)",
+      "tags": [
+        "Spicy",
+        "Bright",
+        "Savory",
+        "Umami",
+        "Vitamin C",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Spicy",
+          "Bright",
+          "Savory",
+          "Umami"
+        ],
+        "Key Micronutrients": [
+          "Vitamin C",
+          "Iron",
+          "Probiotics"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Korean",
+          "Asian"
+        ]
+      },
+      "link": "https://app.notion.com/p/Gochujang-Lime-Glaze-Light-359b647699e8813fb644efa401556393"
+    },
+    {
+      "name": "Carrot Sticks + Hummus + Za'atar",
+      "detail": "Protein: 6g | Carbs: 22g | Fat: 10g | Calories: ~200 kcal",
+      "tags": [
+        "Savory",
+        "Earthy",
+        "Herby",
+        "Bright",
+        "Vitamin A",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Earthy",
+          "Herby",
+          "Bright"
+        ],
+        "Key Micronutrients": [
+          "Vitamin A",
+          "Iron",
+          "Folate",
+          "Vitamin C",
+          "Calcium",
+          "Fiber"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "Middle Eastern",
+          "Mediterranean"
+        ]
+      },
+      "link": "https://app.notion.com/p/Carrot-Sticks-Hummus-Za-atar-359b647699e881ad82f9f0695171e39a"
+    },
+    {
+      "name": "Dark Chocolate, Berries & Nuts",
+      "detail": "Protein: 5g | Carbs: 20g | Fat: 16g | Calories: ~240 kcal",
+      "tags": [
+        "Sweet",
+        "Nutty",
+        "Earthy",
+        "Iron",
+        "Magnesium",
+        "Antioxidants"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Nutty",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Magnesium",
+          "Antioxidants",
+          "Zinc"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "American",
+          "European"
+        ]
+      },
+      "link": "https://app.notion.com/p/Dark-Chocolate-Berries-Nuts-359b647699e881058c41ee4b2e703da4"
+    },
+    {
+      "name": "Edamame with Chili-Lime",
+      "detail": "Protein: 12g | Carbs: 12g | Fat: 6g | Calories: ~150 kcal",
+      "tags": [
+        "Savory",
+        "Spicy",
+        "Bright",
+        "Iron",
+        "Folate",
+        "Vitamin C"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Spicy",
+          "Bright"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Vitamin C",
+          "Magnesium",
+          "Zinc",
+          "Vitamin K"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "Asian",
+          "Japanese"
+        ]
+      },
+      "link": "https://app.notion.com/p/Edamame-with-Chili-Lime-359b647699e88154a4fdd5f4372e60f1"
+    },
+    {
+      "name": "Buckwheat Porridge — Sweet Apple–Cinnamon or Savory Mushroom–Egg",
+      "detail": "Protein: 14g | Carbs: 50g | Fat: 12g | Calories: ~365 kcal",
+      "tags": [
+        "Earthy",
+        "Nutty",
+        "Sweet",
+        "Savory",
+        "Magnesium",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Earthy",
+          "Nutty",
+          "Sweet",
+          "Savory"
+        ],
+        "Key Micronutrients": [
+          "Magnesium",
+          "Iron",
+          "B Vitamins",
+          "Vitamin D",
+          "Zinc",
+          "Manganese"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Eastern European",
+          "Asian"
+        ]
+      },
+      "link": "https://app.notion.com/p/Buckwheat-Porridge-Sweet-Apple-Cinnamon-or-Savory-Mushroom-Egg-359b647699e881509492e4819a2916c5"
+    },
+    {
+      "name": "Chickpea Flour Pancake (Socca / Besan Chilla)",
+      "detail": "Protein: 19g | Carbs: 43g | Fat: 14g | Calories: ~375 kcal",
+      "tags": [
+        "Savory",
+        "Earthy",
+        "Bright",
+        "Herby",
+        "Iron",
+        "Folate"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Earthy",
+          "Bright",
+          "Herby"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Folate",
+          "Vitamin K",
+          "Vitamin C",
+          "Zinc",
+          "Manganese"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Indian",
+          "Mediterranean",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Chickpea-Flour-Pancake-Socca-Besan-Chilla-359b647699e881b684cef5e4930ff44f"
+    },
+    {
+      "name": "Salmon & Sardine Cakes + Cabbage Slaw",
+      "detail": "Protein: 32g | Carbs: 20g | Fat: 18g | Calories: ~370 kcal",
+      "tags": [
+        "Savory",
+        "Bright",
+        "Herby",
+        "Tangy",
+        "Omega-3",
+        "Vitamin D"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Bright",
+          "Herby",
+          "Tangy"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Vitamin D",
+          "Vitamin B12",
+          "Vitamin C",
+          "Selenium",
+          "Calcium"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "American",
+          "Mediterranean",
+          "European"
+        ]
+      },
+      "link": "https://app.notion.com/p/Salmon-Sardine-Cakes-Cabbage-Slaw-359b647699e881cd9b71ef38540b15ed"
+    },
+    {
+      "name": "Trail Mix \"Brain Blend\"",
+      "detail": "Protein: 6g | Carbs: 22g | Fat: 18g | Calories: ~270 kcal",
+      "tags": [
+        "Sweet",
+        "Nutty",
+        "Earthy",
+        "Omega-3",
+        "Magnesium",
+        "Zinc"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Nutty",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Magnesium",
+          "Zinc",
+          "Iron",
+          "Antioxidants"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Trail-Mix-Brain-Blend-359b647699e881f1b31bcb491dd9658e"
+    },
+    {
+      "name": "West African Peanut Stew (Maafe)",
+      "detail": "Protein: 35g | Carbs: 45g | Fat: 20g | Calories: ~500 kcal",
+      "tags": [
+        "Savory",
+        "Nutty",
+        "Earthy",
+        "Spicy",
+        "Vitamin A",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Nutty",
+          "Earthy",
+          "Spicy"
+        ],
+        "Key Micronutrients": [
+          "Vitamin A",
+          "Iron",
+          "Vitamin C",
+          "Magnesium",
+          "Folate",
+          "Zinc"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Asian-Fusion",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/West-African-Peanut-Stew-Maafe-359b647699e88195abe5da4e73f673b2"
+    },
+    {
+      "name": "Golden Tofu Scramble with Kimchi & Potatoes",
+      "detail": "Protein: 23g | Carbs: 38g | Fat: 16g | Calories: ~385 kcal",
+      "tags": [
+        "Savory",
+        "Spicy",
+        "Umami",
+        "Earthy",
+        "Calcium",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Spicy",
+          "Umami",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Iron",
+          "Vitamin C",
+          "Vitamin K",
+          "Probiotics",
+          "Manganese"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Asian-Fusion",
+          "Korean",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Golden-Tofu-Scramble-with-Kimchi-Potatoes-359b647699e881c3a2f2c0acc68efe35"
+    },
+    {
+      "name": "Greek Yogurt & Berry Seed Crunch Bowl",
+      "detail": "Protein: 22g | Carbs: 32g | Fat: 17g | Calories: ~370 kcal",
+      "tags": [
+        "Sweet",
+        "Bright",
+        "Nutty",
+        "Creamy",
+        "Calcium",
+        "Omega-3"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Bright",
+          "Nutty",
+          "Creamy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Omega-3",
+          "Probiotics",
+          "Magnesium",
+          "Antioxidants",
+          "Iodine"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Greek-Yogurt-Berry-Seed-Crunch-Bowl-359b647699e88151afc7e536c412bb9a"
+    },
+    {
+      "name": "Sardine–Avocado Toast with Citrus",
+      "detail": "Protein: 28g | Carbs: 30g | Fat: 22g | Calories: ~430 kcal",
+      "tags": [
+        "Savory",
+        "Bright",
+        "Umami",
+        "Herby",
+        "Omega-3",
+        "Vitamin D"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Bright",
+          "Umami",
+          "Herby"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Vitamin D",
+          "Vitamin B12",
+          "Calcium",
+          "Iron",
+          "Vitamin E"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Sardine-Avocado-Toast-with-Citrus-359b647699e881b1a94bcc860aaf3fff"
+    },
+    {
+      "name": "Stuffed Peppers with Quinoa, Lentils & Feta",
+      "detail": "Protein: 20g | Carbs: 48g | Fat: 14g | Calories: ~395 kcal",
+      "tags": [
+        "Savory",
+        "Herby",
+        "Bright",
+        "Earthy",
+        "Vitamin C",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Savory",
+          "Herby",
+          "Bright",
+          "Earthy"
+        ],
+        "Key Micronutrients": [
+          "Vitamin C",
+          "Iron",
+          "Calcium",
+          "Folate",
+          "Vitamin K",
+          "Vitamin A"
+        ],
+        "Category": [
+          "Dinner"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Stuffed-Peppers-with-Quinoa-Lentils-Feta-359b647699e88149b7d6f771ee29ec2a"
+    },
+    {
+      "name": "Sesame–Soy Scallion Sauce",
+      "detail": "Protein: 1g | Carbs: 4g | Fat: 4g | Calories: ~55 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Umami",
+        "Savory",
+        "Earthy",
+        "Nutty",
+        "Iron",
+        "Manganese"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Umami",
+          "Savory",
+          "Earthy",
+          "Nutty"
+        ],
+        "Key Micronutrients": [
+          "Iron",
+          "Manganese",
+          "Zinc",
+          "B Vitamins"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Asian",
+          "Japanese"
+        ]
+      },
+      "link": "https://app.notion.com/p/Sesame-Soy-Scallion-Sauce-359b647699e8815b8c36c80964e9f2ea"
+    },
+    {
+      "name": "Peanut–Lime–Chili Sauce",
+      "detail": "Protein: 4g | Carbs: 8g | Fat: 8g | Calories: ~115 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Nutty",
+        "Bright",
+        "Spicy",
+        "Savory",
+        "Magnesium",
+        "Vitamin E"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Nutty",
+          "Bright",
+          "Spicy",
+          "Savory"
+        ],
+        "Key Micronutrients": [
+          "Magnesium",
+          "Vitamin E",
+          "Zinc",
+          "B Vitamins"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Asian",
+          "Asian-Fusion"
+        ]
+      },
+      "link": "https://app.notion.com/p/Peanut-Lime-Chili-Sauce-359b647699e88104acc5de99f208208e"
+    },
+    {
+      "name": "Chimichurri",
+      "detail": "Protein: 0g | Carbs: 1g | Fat: 10g | Calories: ~90 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Herby",
+        "Bright",
+        "Savory",
+        "Vitamin K",
+        "Vitamin C",
+        "Iron"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Herby",
+          "Bright",
+          "Savory"
+        ],
+        "Key Micronutrients": [
+          "Vitamin K",
+          "Vitamin C",
+          "Iron"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Chimichurri-359b647699e881d9a07affdd8bc18036"
+    },
+    {
+      "name": "Yogurt–Herb \"Green\" Sauce",
+      "detail": "Protein: 4g | Carbs: 3g | Fat: 2g | Calories: ~50 kcal (per 2 tbsp serving)",
+      "tags": [
+        "Herby",
+        "Bright",
+        "Tangy",
+        "Creamy",
+        "Calcium",
+        "Probiotics"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Herby",
+          "Bright",
+          "Tangy",
+          "Creamy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Probiotics",
+          "Vitamin K",
+          "Vitamin C"
+        ],
+        "Category": [
+          "Sauce/Dressing"
+        ],
+        "Cuisine Tags": [
+          "Mediterranean",
+          "Middle Eastern"
+        ]
+      },
+      "link": "https://app.notion.com/p/Yogurt-Herb-Green-Sauce-359b647699e88167bd4ec8b198ae5bab"
+    },
+    {
+      "name": "Chia–Kefir Pudding with Berries & Pumpkin Seeds",
+      "detail": "Protein: 16g | Carbs: 28g | Fat: 14g | Calories: ~300 kcal",
+      "tags": [
+        "Sweet",
+        "Bright",
+        "Creamy",
+        "Tangy",
+        "Calcium",
+        "Omega-3"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Bright",
+          "Creamy",
+          "Tangy"
+        ],
+        "Key Micronutrients": [
+          "Calcium",
+          "Omega-3",
+          "Probiotics",
+          "Magnesium",
+          "Zinc",
+          "Phosphorus"
+        ],
+        "Category": [
+          "Breakfast"
+        ],
+        "Cuisine Tags": [
+          "American",
+          "European"
+        ]
+      },
+      "link": "https://app.notion.com/p/Chia-Kefir-Pudding-with-Berries-Pumpkin-Seeds-359b647699e88135aafdc59518c4f66e"
+    },
+    {
+      "name": "Apple Slices + Peanut Butter + Flax",
+      "detail": "Protein: 8g | Carbs: 28g | Fat: 16g | Calories: ~285 kcal",
+      "tags": [
+        "Sweet",
+        "Nutty",
+        "Bright",
+        "Omega-3",
+        "Vitamin C",
+        "Magnesium"
+      ],
+      "facets": {
+        "Flavor Profile": [
+          "Sweet",
+          "Nutty",
+          "Bright"
+        ],
+        "Key Micronutrients": [
+          "Omega-3",
+          "Vitamin C",
+          "Magnesium",
+          "Fiber",
+          "Vitamin E"
+        ],
+        "Category": [
+          "Snack"
+        ],
+        "Cuisine Tags": [
+          "American"
+        ]
+      },
+      "link": "https://app.notion.com/p/Apple-Slices-Peanut-Butter-Flax-359b647699e881478221ee11846d012f"
+    }
+  ],
+  "workouts": [],
+  "fetchedAt": "2026-07-02T16:31:11.943Z"
+}

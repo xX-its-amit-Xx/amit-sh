@@ -3,6 +3,11 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Daily at 12:00 UTC — re-fetches Notion / Substack / GitHub / Obsidian data
+    # so the site self-updates without a push. See INTEGRATION.md §5.
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: read
@@ -29,6 +34,14 @@ jobs:
 
       - run: npm ci
       - run: npm run build
+        env:
+          # Raises GitHub API rate limits for the repo fetcher (built-in token).
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Add these in repo Settings → Secrets → Actions once you're ready.
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_MEALS_DB: ${{ secrets.NOTION_MEALS_DB }}
+          NOTION_WORKOUTS_DB: ${{ secrets.NOTION_WORKOUTS_DB }}
+          VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

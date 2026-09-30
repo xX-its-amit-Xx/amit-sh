@@ -418,10 +418,17 @@ be the **inbox**, with a weekly Claude run as the **publisher**:
 2. **Agents write rows as `Draft`**, or as `Ready` for low-risk types (a paper you
    read). You flip anything sensitive (placements, roles) to `Ready` yourself, so
    nothing reaches your public site unless you or a rule approved it.
-3. **A weekly Claude Code Routine** (a scheduled cloud session) reads `Ready`
+3. **A weekly Claude Code Routine** (Saturdays ~6 AM ET, set up in Sept 2026) reads `Ready`
    rows, adds them to the site data (projects/work/graph), runs the build to
    make sure nothing breaks, pushes (or opens a PR for review), and marks each
-   row `Published` with the date.
+   row `Published` with the date, then emails a summary (or "no changes") to
+   shenoy.am@northeastern.edu. It publishes straight to `main`.
+
+   Database: <https://app.notion.com/p/e9326c38f6f847c6a53adc61531df480> (under Personal Home).
+   **Telling an agent to use it:** "When you have a notable update for Amit's website
+   (hackathon result, new role, paper, award, post), add a row to the Notion database
+   🌐 Site Updates with Title, Type, Date, Summary (plain facts), Link, Source = your name,
+   and Status = Draft. Never set Status to Ready."
 
 This complements channel A: message Claude for anything urgent, and let the
 weekly run sweep up everything else.
@@ -452,7 +459,9 @@ hype/roast questions have hand-written answers, and free-form questions get a
 friendly "brain offline" reply.
 
 ### Editing it
-- **Facts & personality:** `FACTS` / `SYSTEM` in `workers/chat.js` (redeploy after edits).
-  The bot is told to use only these facts, so keep them current (the weekly sync can too).
+- **Facts:** `public/chat-facts.txt` (one `- ` line per fact). The Worker re-reads it
+  from the live site every ~10 min, so edits ship with a normal push, no redeploy needed.
+  The weekly Notion sync appends new facts here automatically.
+- **Personality/rules:** the `persona` prompt in `workers/chat.js` (redeploy after edits).
 - **Suggested questions + offline answers:** the `HYPE` and `ROAST` lists in `src/chat.jsx`.
 - **Model:** `GROQ_MODEL` in `chat.wrangler.toml`.

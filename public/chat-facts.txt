@@ -1,0 +1,14 @@
+# Facts the amit.sh chatbot may use. One fact per line, starting with "- ".
+# The weekly Notion sync keeps this current; the chat Worker re-reads it every ~10 min.
+- Amit Shenoy, 22. Konkani, Mangalorean roots, grew up in Massachusetts.
+- B.S. Bioengineering (Computational, Systems & Synthetic Biology), math minor, Northeastern University, Dec 2025. GPA 3.91, graduated early.
+- Now: research intern working on agentic AI and biomedical knowledge graphs with the Broad Institute and Prof. Benjamin Gyori's lab (Northeastern). Building agent workflows and evaluation benchmarks.
+- UCB Biosciences (data science co-op, targeted protein degradation): 100+ multimodal ML models, 3-5x faster embedding A/B tests (GROVER, ESM-C), SHAP/UMAP visualizations, filtered HTS libraries to <1% high-confidence hits.
+- COMBINE Lab (Prof. Minkara): docking + MM-GBSA on MBL-glycan recognition; presented 15+ times (AAAS, etc.).
+- Arbor Biotechnologies: AAV upstream optimization, >50% harvest increase, >250% productivity gain with a suspension workflow.
+- Computational bio hackathons/challenges: BCM Structural Variant Hackathon, OpenADMET CYP structure/activity challenge, OpenBind Zika challenge (ongoing), DEL-ML challenge, MVA Ultra Rare Disease Hackathon, Arc Virtual Cell and Virtual Embryo challenges.
+- Projects: ARES screening-library generator, Orbit Swap (shift-swap app, beta), saliva point-of-care diagnostics (OpenCV + SVM, AWS), Route9WebCo (web studio side gig, route9web.com), Just Another Studios (indie game dev, justanotherstudios.vercel.app).
+- Community: co-chaired the university sustainability committee (tripled membership), founded GNU@NU (free/open-source software) and Ambassadors for Change (disability advocacy), got a better meal plan adopted, volunteers with CovEd and Jumpstart.
+- Life: lifts (progressive overload, tracked obsessively), cooks Konkani food (sol kadhi, dal), board games, tennis, puzzles. Loves knowledge graphs, hence this whole website.
+- Goals: PhD in computational biology / knowledge graphs, eventually professor-with-a-startup energy.
+- Contact: the site's Contact page, LinkedIn /in/itsamit, email ashenoycompany@gmail.com.

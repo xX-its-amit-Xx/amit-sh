@@ -27,7 +27,7 @@ export const NODE_SYMBOLS = {
   python: "snake", viz: "barChart", cloud: "cloud", sustain: "sapling", foss: "penguin",
   a4c: "access", aisafety: "shield", feeding: "bowl", learning: "openBook", rangers: "mountain",
   lifting: "dumbbell", cooking: "pan", konkani: "palm", writing: "quill",
-  broad: "kgraph", route9: "laptop", studio: "controller",
+  broad: "kgraph", route9: "laptop", studio: "controller", hackathons: "trophy",
 };
 
 const KEYWORD_SYMBOLS = [

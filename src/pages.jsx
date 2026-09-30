@@ -756,7 +756,7 @@ function NotionEmbed({ dark, url, openUrl, title, label, cta = "open →", icon 
 
 // Deployed Cloudflare Worker URL (see workers/ + INTEGRATION.md). Empty = the
 // form just shows a local thank-you and doesn't hit any backend.
-const FORM_ENDPOINT = "amit-sh-recipe-form.ashenoy000.workers.dev";
+const FORM_ENDPOINT = "https://amit-sh-recipe-form.ashenoy000.workers.dev";
 
 export function WellnessPage({ dark }) {
   const p = palette(dark);

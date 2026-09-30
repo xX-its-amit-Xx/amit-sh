@@ -405,3 +405,54 @@ edges.
 1. Add `updates.json` + the fan-out in `build-data.mjs` (small change; no new deps).
 2. Bump the cron to every 3 hours.
 3. Use channel A for a week; add B or C only if you find yourself wanting them.
+
+### Weekly Notion sync (agents → Notion → site)
+
+Your job-search / hackathon / news agents already write to Notion, so Notion can
+be the **inbox**, with a weekly Claude run as the **publisher**:
+
+1. **A "🌐 Site Updates" Notion database** that agents append to. Columns:
+   `Title` · `Type` (hackathon / paper / role / award / post / project) · `Date` ·
+   `Summary` · `Link` · `Connects to` (text: graph node ids like `ml, broad`) ·
+   `Status` (Draft → Ready → Published).
+2. **Agents write rows as `Draft`**, or as `Ready` for low-risk types (a paper you
+   read). You flip anything sensitive (placements, roles) to `Ready` yourself, so
+   nothing reaches your public site unless you or a rule approved it.
+3. **A weekly Claude Code Routine** (a scheduled cloud session) reads `Ready`
+   rows, adds them to the site data (projects/work/graph), runs the build to
+   make sure nothing breaks, pushes (or opens a PR for review), and marks each
+   row `Published` with the date.
+
+This complements channel A: message Claude for anything urgent, and let the
+weekly run sweep up everything else.
+
+---
+
+## 11. The "ask about Amit" chatbot (Groq)
+
+The floating 💬 on every page is `src/chat.jsx`. It sends messages to a tiny
+Cloudflare Worker (`workers/chat.js`) that holds your **Groq API key as a secret**
+and forwards requests to Groq's chat API with a fixed persona prompt and facts list.
+
+**Why a Worker?** The site is static: anything in its JavaScript can be read
+by any visitor. A key in the page would be copied and drained within days. The
+Worker keeps it server-side and also locks requests to your site's origin, caps
+message length and history, and (optionally) rate-limits per IP.
+
+### Deploy (once, ~5 min)
+```bash
+cd workers
+wrangler deploy -c chat.wrangler.toml            # prints https://amit-sh-chat.<you>.workers.dev
+wrangler secret put GROQ_API_KEY -c chat.wrangler.toml   # paste the key when prompted
+```
+If the printed URL differs from `CHAT_ENDPOINT` in `src/chat.jsx`, update it and push.
+
+**Before it's deployed** the widget still works in "offline mode": the suggested
+hype/roast questions have hand-written answers, and free-form questions get a
+friendly "brain offline" reply.
+
+### Editing it
+- **Facts & personality:** `FACTS` / `SYSTEM` in `workers/chat.js` (redeploy after edits).
+  The bot is told to use only these facts, so keep them current (the weekly sync can too).
+- **Suggested questions + offline answers:** the `HYPE` and `ROAST` lists in `src/chat.jsx`.
+- **Model:** `GROQ_MODEL` in `chat.wrangler.toml`.

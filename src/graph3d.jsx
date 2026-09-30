@@ -44,7 +44,7 @@ const NODE_ICONS = {
   ares: "📚", orbit: "🪐", saliva: "🧪", ml: "🧠", python: "🐍", viz: "📊", cloud: "☁️",
   sustain: "🌱", foss: "🐧", a4c: "♿", aisafety: "🛡️", feeding: "🍲", learning: "📖",
   rangers: "🏔️", lifting: "🏋️", cooking: "🍳", konkani: "🌴", writing: "✍️",
-  broad: "🕸️", route9: "💻", studio: "🎮",
+  broad: "🕸️", route9: "💻", studio: "🎮", hackathons: "🏆",
 };
 const CAT_ICONS = { self: "🧑‍💻", research: "🔬", project: "🛠️", community: "🌍", skill: "⚙️", value: "❤️", life: "✨" };
 const iconFor = (n) => n.icon || NODE_ICONS[n.id] || CAT_ICONS[n.cat] || "◆";

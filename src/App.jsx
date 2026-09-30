@@ -5,6 +5,7 @@ import { palette, MONO } from "./theme.js";
 import { ConstellationBackground } from "./graph.jsx";
 import { Nav, PersonaPicker, GuidedPath, NextStop } from "./nav.jsx";
 import { CommandPalette } from "./palette.jsx";
+import { ChatWidget } from "./chat.jsx";
 import { AchievementToasts, AchievementsPanel, useKonami } from "./meta.jsx";
 import {
   HomePage, AboutPage, WorkPage, CommunityPage, ProjectsPage, ArcadePage, RangersPage,
@@ -154,7 +155,7 @@ function Shell() {
   const PageComp = PAGE_COMPONENTS[page] || HomePage;
 
   return (
-    <div style={{ minHeight: "100vh", background: p.bg, color: p.fg, fontFamily: "'DM Sans', sans-serif", transition: "background 0.4s ease, color 0.4s ease", position: "relative" }}>
+    <div style={{ minHeight: "100vh", background: p.bg, color: p.fg, fontFamily: "'DM Sans', sans-serif", transition: "background 0.4s ease, color 0.4s ease", position: "relative", display: "flow-root" }}>
       <style>{GLOBAL_CSS}</style>
       <ScrollProgress />
       <ConstellationBackground dark={dark} />
@@ -190,6 +191,7 @@ function Shell() {
       <AchievementsPanel open={trophiesOpen} onClose={() => setTrophiesOpen(false)} />
       <PersonaPicker open={personaOpen} onClose={() => setPersonaOpen(false)} />
       <AchievementToasts />
+      <ChatWidget />
     </div>
   );
 }

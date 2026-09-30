@@ -275,6 +275,7 @@ export function GuidedPath({ page, setPage }) {
               <span key={pg} style={{ display: "flex", alignItems: "center", gap: 6 }}>
                 <button
                   onClick={() => setPage(pg)}
+                  className={isNext ? "nudge-pulse" : undefined}
                   title={isCurrent ? "you're here" : `go to ${pg}`}
                   style={{
                     background: isCurrent ? "#8B9D77" : isNext ? "rgba(139,157,119,0.22)" : "transparent",
@@ -297,6 +298,60 @@ export function GuidedPath({ page, setPage }) {
           })}
         </div>
       </div>
+    </div>
+  );
+}
+
+// ── Next stop ────────────────────────────────────────────────────────────────
+// A "where to go from here" card at the bottom of every page, so nobody hits a
+// dead end. Follows the visitor's persona route when they picked one, else a
+// default scenic tour.
+const TOUR = ["Home", "About", "Work", "Projects", "Community", "Blog", "Wellness", "Arcade", "Rangers", "Contact"];
+const TEASERS = {
+  Home: "Back to the knowledge graph — the map of everything.",
+  About: "The short version, told at unnecessary length.",
+  Work: "Research: molecules in, insights out.",
+  Projects: "Things I've built, auto-synced from GitHub.",
+  Community: "Sustainability, accessibility, FOSS.",
+  Blog: "Writing on research, FOSS, and gradient descent.",
+  Wellness: "Lifting logs and Konkani recipes.",
+  Arcade: "Dock a molecule. Pair some bases.",
+  Rangers: "Summit decisions, questionable.",
+  Contact: "Say hi — I answer interesting DMs.",
+  Careers: "Free resume templates and advice.",
+  Resume: "The one-page version.",
+};
+
+export function NextStop({ page, setPage }) {
+  const { dark, persona } = useApp();
+  const p = palette(dark);
+  const route = (persona && PERSONAS[persona]?.path) || TOUR;
+  const idx = route.indexOf(page);
+  const next = idx >= 0 ? route[(idx + 1) % route.length] : route.find((x) => x !== page);
+  if (!next || next === page) return null;
+  const icon = PAGES.find((x) => x.id === next)?.icon;
+  return (
+    <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 24px 40px", position: "relative", zIndex: 1 }}>
+      <button
+        onClick={() => setPage(next)}
+        className="next-stop"
+        data-reveal=""
+        style={{
+          width: "100%", display: "flex", alignItems: "center", gap: 16, textAlign: "left", cursor: "pointer",
+          background: dark ? "rgba(196,144,96,0.07)" : "rgba(196,144,96,0.06)",
+          border: "1px dashed rgba(196,144,96,0.4)", borderRadius: 14, padding: "18px 22px", color: p.fg,
+        }}
+      >
+        <span style={{ fontSize: 28 }}>{icon}</span>
+        <span style={{ flex: 1 }}>
+          <span style={{ display: "block", fontFamily: MONO, fontSize: 11, color: "#8B9D77", marginBottom: 4 }}>
+            {persona && PERSONAS[persona] ? `${PERSONAS[persona].label} route · next stop` : "next stop"}
+          </span>
+          <span style={{ display: "block", fontFamily: MONO, fontSize: 18, fontWeight: 700 }}>cd ~/{next.toLowerCase()}</span>
+          <span style={{ display: "block", fontFamily: SANS, fontSize: 14, color: p.muted, marginTop: 2 }}>{TEASERS[next]}</span>
+        </span>
+        <span className="nudge-x" style={{ fontFamily: MONO, fontSize: 22, color: "#C49060" }}>→</span>
+      </button>
     </div>
   );
 }

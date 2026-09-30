@@ -126,7 +126,7 @@ export function Section({ children, style: s = {} }) {
 export function SectionHeader({ dark, icon, title, sub }) {
   const p = palette(dark);
   return (
-    <div style={{ marginBottom: 40 }}>
+    <div style={{ marginBottom: 40 }} data-reveal="">
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
         {icon && <PixelIcon type={icon} size={28} color="#C49060" />}
         <h1
@@ -191,6 +191,7 @@ export function TiltCard({ dark, children, style: s = {}, onClick, max = 8, glow
   return (
     <div
       ref={ref}
+      data-reveal=""
       onMouseMove={onMove}
       onMouseLeave={onLeave}
       onClick={onClick}

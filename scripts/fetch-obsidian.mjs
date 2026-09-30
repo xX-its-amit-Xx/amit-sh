@@ -42,6 +42,7 @@ export function buildGraph(files) {
     page: n.fm.page || null,
     size: n.fm.size ? Number(n.fm.size) : 1.5,
     blurb: n.fm.blurb || firstLine(n.body),
+    ...(n.fm.symbol ? { symbol: n.fm.symbol } : {}),
   }));
 
   const edgeSet = new Set();

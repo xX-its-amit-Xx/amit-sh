@@ -101,15 +101,25 @@ export function HomePage({ dark, setPage }) {
 
       <TerminalBlock dark={dark} prompt="amit@hub ~ $">{PROFILE.motd}</TerminalBlock>
 
+      <div style={{ textAlign: "center", marginTop: 18 }}>
+        <button
+          onClick={() => document.getElementById("knowledge-graph")?.scrollIntoView({ behavior: "smooth", block: "start" })}
+          style={{ background: "none", border: "none", cursor: "pointer", fontFamily: MONO, fontSize: 12, color: p.muted, display: "inline-flex", flexDirection: "column", alignItems: "center", gap: 2 }}
+        >
+          explore the graph
+          <span className="bounce-y" style={{ color: "#C49060", fontSize: 18 }}>↓</span>
+        </button>
+      </div>
+
       {/* Knowledge graph centerpiece */}
-      <div style={{ marginTop: 28, marginBottom: 12 }}>
+      <div id="knowledge-graph" style={{ marginTop: 20, marginBottom: 12, scrollMarginTop: 80 }}>
         <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
           <PixelIcon type="graph" size={22} />
           <h2 style={{ fontFamily: MONO, fontSize: 20, fontWeight: 700, color: p.fg, margin: 0 }}>Me, as a knowledge graph</h2>
         </div>
         <p style={{ fontFamily: SANS, fontSize: 14, color: p.muted, margin: "0 0 14px", lineHeight: 1.6, maxWidth: 640 }}>
-          Everything I do is connected — research feeds projects, values feed community, food feeds everything. Trace the edges,
-          or hit <TerminalText dark={dark}>play NODE.LINK</TerminalText> to connect two ideas yourself.
+          Everything I do is connected — research feeds projects, values feed community, food feeds everything. Each symbol is a
+          piece of my world: click one to learn more, follow the glowing ring to the next, or hit <TerminalText dark={dark}>play NODE.LINK</TerminalText> to connect two ideas yourself.
         </p>
       </div>
       <Suspense
@@ -138,7 +148,8 @@ export function HomePage({ dark, setPage }) {
               <PixelIcon type={item.icon} size={20} />
               <h3 style={{ fontFamily: MONO, fontSize: 16, fontWeight: 700, color: p.fg, margin: 0 }}>{item.label}</h3>
             </div>
-            <p style={{ fontFamily: SANS, fontSize: 14, color: p.muted, margin: 0, lineHeight: 1.6 }}>{item.desc}</p>
+            <p style={{ fontFamily: SANS, fontSize: 14, color: p.muted, margin: "0 0 10px", lineHeight: 1.6 }}>{item.desc}</p>
+            <span style={{ fontFamily: MONO, fontSize: 12, fontWeight: 700, color: "#8B9D77" }}>cd {item.page.toLowerCase()} <span className="nudge-x">→</span></span>
           </TiltCard>
         ))}
       </div>
@@ -469,10 +480,10 @@ export function ArcadePage({ dark, setPage }) {
       {/* game-dev hobby site */}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 10 }}>
         <PixelIcon type="controller" size={20} />
-        <h3 style={{ fontFamily: MONO, fontSize: 18, fontWeight: 700, color: p.fg, margin: 0 }}>justanotherstudies.dev</h3>
+        <h3 style={{ fontFamily: MONO, fontSize: 18, fontWeight: 700, color: p.fg, margin: 0 }}>Just Another Studios</h3>
       </div>
       <p style={{ fontFamily: SANS, fontSize: 14, color: p.muted, margin: "0 0 12px", lineHeight: 1.7, maxWidth: 640 }}>{GAMEDEV.blurb}</p>
-      <NotionEmbed dark={dark} url={GAMEDEV.siteEmbed} openUrl={GAMEDEV.site} label="justanotherstudies.dev" title="Just Another Studies" cta="open the studio →" icon="controller" />
+      <NotionEmbed dark={dark} url={GAMEDEV.siteEmbed} openUrl={GAMEDEV.site} label="justanotherstudios.vercel.app" title="Just Another Studios" cta="open the studio →" icon="controller" />
 
       {/* mini-games */}
       <div style={{ display: "flex", alignItems: "center", gap: 10, margin: "40px 0 14px" }}>

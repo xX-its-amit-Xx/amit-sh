@@ -87,6 +87,20 @@ export const PERSONAS = {
 // ── Work / Research ──────────────────────────────────────────────────────────
 export const WORK = [
   {
+    // TODO(Amit): confirm title, start date and bullets — drafted from notes, not LinkedIn.
+    id: "broad",
+    title: "Research Intern — Agentic AI & Biomedical Knowledge Graphs",
+    org: "Broad Institute + Gyori Lab (Northeastern), Cambridge / Boston, MA",
+    time: "2026 – Present",
+    note: "Small team, big graph. Teaching agents to do science, then grading their homework.",
+    bullets: [
+      "Building agentic AI workflows that assemble and reason over biomedical knowledge graphs.",
+      "Designing evaluation benchmarks so agent performance on scientific tasks is measured, not vibed.",
+      "Working across heterogeneous biological data types toward models of how cells actually work.",
+    ],
+    tags: ["Agentic AI", "Knowledge Graphs", "Benchmarks", "LLMs"],
+  },
+  {
     id: "ucb",
     title: "Data Science Co-op — Targeted Protein Degradation",
     org: "UCB Biosciences, Cambridge, MA",
@@ -222,6 +236,7 @@ export const PROJECT_TYPES = [
   { id: "repo", label: "GitHub" },
   { id: "hackathon", label: "Hackathon" },
   { id: "product", label: "Product" },
+  { id: "side", label: "Side Project" },
 ];
 
 export const PROJECTS = [
@@ -256,6 +271,28 @@ export const PROJECTS = [
     type: "class",
     link: null,
   },
+  {
+    id: "route9",
+    title: "Route9WebCo",
+    note: "Learn-by-doing business school: pitch, build, ship, invoice.",
+    desc: "A small web-development studio building sites for local businesses — client pitching, design, and deployment end to end.",
+    tags: ["Web Dev", "Freelance", "Business"],
+    category: "engineering",
+    type: "side",
+    link: "https://route9web.com",
+    linkLabel: "→ route9web.com",
+  },
+  {
+    id: "jas",
+    title: "Just Another Studios",
+    note: "Turning a lifelong gaming habit into something that ships.",
+    desc: "My indie game-dev studio — experiments in mechanics, pixel art, and actually finishing things.",
+    tags: ["Game Dev", "Pixel Art", "Indie"],
+    category: "engineering",
+    type: "side",
+    link: "https://justanotherstudios.vercel.app",
+    linkLabel: "→ justanotherstudios.vercel.app",
+  },
 ];
 
 // Heuristic classifier for auto-fetched GitHub repos → a project category.
@@ -284,8 +321,8 @@ export const GALLERY = [
 
 // ── Game dev / Arcade ────────────────────────────────────────────────────────
 export const GAMEDEV = {
-  site: "https://justanotherstudies.dev",
-  siteEmbed: "https://justanotherstudies.dev",
+  site: "https://justanotherstudios.vercel.app",
+  siteEmbed: "https://justanotherstudios.vercel.app",
   blurb: "My game-dev hobby lab — experiments in mechanics, pixel art, and finishing things.",
   orbitInstagram: null, // Orbit Swap IG — coming soon
 };
@@ -314,11 +351,14 @@ const GRAPH_DEFAULT = {
     { id: "combine", label: "COMBINE Lab", cat: "research", page: "Work", size: 2, blurb: "Computational biochemistry & docking." },
     { id: "arbor", label: "Arbor Bio", cat: "research", page: "Work", size: 1.6, blurb: "AAV upstream process optimization." },
     { id: "cheminfo", label: "Cheminformatics", cat: "research", page: "Work", size: 1.6, blurb: "Molecules in, insights out." },
+    { id: "broad", label: "Broad + Gyori Lab", cat: "research", page: "Work", size: 2, blurb: "Agentic AI + knowledge graphs for biology." },
     { id: "biophysics", label: "Biophysics", cat: "research", page: "Work", size: 1.4, blurb: "MM-GBSA, docking, free energy." },
 
     // projects
     { id: "ares", label: "ARES", cat: "project", page: "Projects", size: 1.6, blurb: "Focused screening library generator." },
     { id: "orbit", label: "Orbit Swap", cat: "project", page: "Projects", size: 1.4, blurb: "Shift-swap app in beta." },
+    { id: "route9", label: "Route9WebCo", cat: "project", page: "Projects", size: 1.3, blurb: "Side-gig web studio for local businesses." },
+    { id: "studio", label: "Just Another Studios", cat: "project", page: "Arcade", size: 1.3, blurb: "Indie game-dev studio." },
     { id: "saliva", label: "Saliva Dx", cat: "project", page: "Projects", size: 1.4, blurb: "Point-of-care diagnostics + CV." },
 
     // skills
@@ -355,6 +395,8 @@ const GRAPH_DEFAULT = {
     ["feeding", "cooking"], ["cooking", "konkani"], ["me", "lifting"], ["me", "rangers"],
     ["feeding", "sustain"], ["learning", "writing"], ["me", "writing"], ["lifting", "feeding"],
     ["python", "cheminfo"],
+    ["me", "broad"], ["broad", "ml"], ["broad", "aisafety"], ["broad", "ucb"],
+    ["me", "route9"], ["route9", "cloud"], ["me", "studio"], ["studio", "python"],
   ],
 };
 

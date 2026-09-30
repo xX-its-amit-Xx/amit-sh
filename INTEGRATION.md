@@ -151,6 +151,8 @@ category: research    # self | research | project | community | skill | value | 
 page: Work            # optional — makes the node click through to that site section
 blurb: ML for TPD.    # optional — hover text (else the first non-heading line is used)
 size: 2               # optional — node size (default 1.5; "me" should be biggest)
+symbol: trophy        # optional — 3D symbol override (see SYMBOL_NAMES in src/symbols3d.js);
+                      #   otherwise picked automatically from the title/blurb keywords
 ---
 # UCB Biosciences
 Working on [[Cheminformatics]] and [[ML]]…
@@ -331,3 +333,75 @@ meals:
 To classify a **hackathon** or **class project** that lives only on GitHub, add a
 GitHub **topic** like `hackathon` or `coursework` to the repo — `classifyRepo` and
 the type filter can key off topics.
+
+---
+
+## 10. Proposal: "tell it once" auto-updates (hackathons, papers, roles, posts)
+
+**Goal:** you win a hackathon, read a paper, start a role, or publish a post, and
+the site updates itself: a new node in the knowledge graph, a card in Projects or
+Work, an item in the Blog feed. No hand-editing React.
+
+### The core idea: one "life log" file, many ways to write to it
+
+Add a single data file, `src/content/updates.json`. Each entry is one event:
+
+```json
+{
+  "date": "2026-10-12",
+  "type": "hackathon",              // hackathon | paper | role | award | post | project
+  "title": "HackMIT — 2nd place",
+  "blurb": "Built an agent that triages lab protocols.",
+  "link": "https://devpost.com/…",
+  "graph": { "cat": "project", "connectsTo": ["ml", "broad"] }
+}
+```
+
+The build (`scripts/build-data.mjs`) then fans each entry out automatically:
+- **Knowledge graph:** every entry with `graph` becomes a node wired to
+  `connectsTo`. Its 3D symbol is picked by keyword (`symbols3d.js`), so
+  "hackathon / 2nd place" gets a trophy and "paper / preprint" gets a stack of
+  papers with a magnifying glass, with no extra config.
+- **Projects:** `hackathon` / `project` entries become project cards.
+- **Work:** `role` entries become experience cards.
+- **Blog → "Now" strip:** the newest entries of any type show as a feed.
+
+Nothing else needs to change when you add an entry. The file is the whole
+interface.
+
+### Three ways to write to it (pick any, or all)
+
+| Channel | How it feels | How it works |
+|---|---|---|
+| **A. Message Claude** (recommended) | From the Claude app on your phone: *"Add: placed 2nd at HackMIT with Priya, link …"* | A Claude Code cloud session on this repo appends the entry, runs the build to check it, and pushes to `main`. The deploy workflow publishes it in ~2 min. |
+| **B. GitHub issue** | GitHub mobile → *New issue → "Site update"* template → fill 3 fields | A GitHub Action (Claude Code GitHub Action, or a small script) turns the issue into a commit on `updates.json`, then closes the issue. Good when you want a paper trail. |
+| **C. Notion database** | Add a row to an "Updates" database (like your existing Blogmaker Ideas/Posts) | `scripts/fetch-updates.mjs` (same pattern as `fetch-notion.mjs`) pulls rows marked `Publish ✓` on every build. Best if you already live in Notion. |
+
+A is the lowest-friction option. It uses the same kind of session that made this
+change, and Claude can also write the polished blurb and choose sensible `connectsTo`
+edges.
+
+### Blog auto-population
+
+- **Substack is already wired:** posts appear via RSS on every build. The only
+  gap is freshness. The cron runs daily, so change it to every 3 hours
+  (`cron: "0 */3 * * *"`). It costs nothing on a public repo.
+- **LinkedIn has no public feed for personal posts** (the official API needs an
+  approved app, and scraping breaks LinkedIn's Terms of Service). ToS-safe routes, best first:
+  1. **Write once, publish from Substack.** Draft in Notion → publish on
+     Substack → share the Substack link on LinkedIn. The site picks it up from
+     RSS, and LinkedIn gets the same post.
+  2. **Automation:** a Zapier/Make zap "new LinkedIn post → new Notion Updates
+     row" (check whether your plan supports *personal-profile* triggers) feeds
+     channel C.
+  3. **RSS bridge** (e.g. rss.app) for your LinkedIn profile → add it as a second
+     feed in `fetch-blog.mjs`. Fastest to set up, and it breaks whenever LinkedIn
+     changes its HTML.
+- **Instant publishing (optional):** any tool that can make an HTTP call (Zapier's
+  "new RSS item", a Notion button) can hit GitHub's `workflow_dispatch` API to
+  rebuild immediately instead of waiting for the cron.
+
+### Suggested rollout
+1. Add `updates.json` + the fan-out in `build-data.mjs` (small change; no new deps).
+2. Bump the cron to every 3 hours.
+3. Use channel A for a week; add B or C only if you find yourself wanting them.

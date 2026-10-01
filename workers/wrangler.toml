@@ -4,7 +4,7 @@ compatibility_date = "2024-11-01"
 
 # Non-secret config. Lock this to your site's origin once deployed:
 [vars]
-ALLOWED_ORIGIN = "https://xX-its-amit-Xx.github.io"
+ALLOWED_ORIGIN = "https://amit-sh.vercel.app"
 
 # Secrets (set with `wrangler secret put <NAME>`, never commit them):
 #   NOTION_TOKEN            — a Notion integration secret with access to the DB

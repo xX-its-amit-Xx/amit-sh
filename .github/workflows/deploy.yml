@@ -1,12 +1,14 @@
-name: Deploy to GitHub Pages
+name: Redirect GitHub Pages to Vercel
+
+# The live site moved to Vercel (https://amit-sh.vercel.app), which builds every
+# push: `main` → production, other branches → preview URLs. This workflow keeps
+# the old https://xx-its-amit-xx.github.io/amit-sh/ links working by publishing a
+# tiny page that forwards visitors (and any path) to the new home.
 
 on:
   push:
     branches: [main]
-  schedule:
-    # Daily at 12:00 UTC — re-fetches Notion / Substack / GitHub / Obsidian data
-    # so the site self-updates without a push. See INTEGRATION.md §5.
-    - cron: "0 12 * * *"
+    paths: [".github/workflows/deploy.yml"]
   workflow_dispatch: {}
 
 permissions:
@@ -19,34 +21,39 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  redirect:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - run: npm ci
-      - run: npm run build
-        env:
-          # Raises GitHub API rate limits for the repo fetcher (built-in token).
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Add these in repo Settings → Secrets → Actions once you're ready.
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_MEALS_DB: ${{ secrets.NOTION_MEALS_DB }}
-          NOTION_WORKOUTS_DB: ${{ secrets.NOTION_WORKOUTS_DB }}
-          VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+      - name: Build redirect page
+        run: |
+          mkdir -p out
+          cat > out/index.html <<'HTML'
+          <!doctype html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8" />
+            <title>amit.sh has moved</title>
+            <link rel="canonical" href="https://amit-sh.vercel.app/" />
+            <meta http-equiv="refresh" content="0; url=https://amit-sh.vercel.app/" />
+            <script>
+              var rest = location.pathname.replace(/^\/amit-sh/, "") + location.search + location.hash;
+              location.replace("https://amit-sh.vercel.app" + rest);
+            </script>
+          </head>
+          <body style="font-family: monospace; background: #1E1C19; color: #F5E6D3; padding: 40px">
+            amit.sh has moved → <a style="color: #E0A970" href="https://amit-sh.vercel.app/">amit-sh.vercel.app</a>
+          </body>
+          </html>
+          HTML
+          cp out/index.html out/404.html
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: out
 
       - id: deployment
         uses: actions/deploy-pages@v4

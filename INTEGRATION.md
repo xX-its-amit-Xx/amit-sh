@@ -6,12 +6,13 @@ The site is **living and self-updating**. Content comes from two places:
 2. **External sources** — GitHub, Substack, Notion, and an Obsidian vault, pulled
    in automatically at **build time** and written to `src/generated/*.json`.
 
-A GitHub Action rebuilds on every push **and daily at noon UTC**, so posts/repos/
+**Vercel** hosts the site (<https://amit-sh.vercel.app>) and rebuilds on every push
+**and daily at noon UTC** (a Vercel Cron → `api/rebuild.js` → Deploy Hook), so posts/repos/
 notes appear on their own without you touching code.
 
 ```
   integrations.config.json   ← non-secret settings you edit (handles, usernames)
-  GitHub Actions secrets      ← tokens (NOTION_TOKEN, VAULT_TOKEN, …) — never in code
+  Vercel environment variables ← tokens (NOTION_TOKEN, VAULT_TOKEN, …) — never in code
         │
         ▼
   scripts/build-data.mjs      ← runs before `vite build` (npm "prebuild" hook)
@@ -117,7 +118,7 @@ The fetcher maps columns by name. In each database use:
 Extra columns are ignored, so your databases can hold whatever else you like.
 
 ### Step 6 — Trigger a build
-Push anything, or GitHub → **Actions → Deploy → Run workflow**, or just wait for
+Push anything, or Vercel → **Deployments → Redeploy**, or just wait for
 the daily run. The Wellness page fills in automatically. Done — no code.
 
 > **Just want a quick link instead?** Publish the Notion page and embed it in an
@@ -177,7 +178,9 @@ edges, so your private thoughts never leak.
 | `src/generated/*.json` | committed data snapshots (fallback + initial state) |
 | `src/data.js` | hand-written content + graph + personas + achievements |
 | `src/pages.jsx` | pages; read generated JSON, fall back to `data.js` |
-| `.github/workflows/deploy.yml` | build + deploy on push **and** daily cron |
+| Vercel project `amit-sh` | builds every push: `main` → production, other branches → preview URLs |
+| `vercel.json` + `api/rebuild.js` | daily 12:00 UTC rebuild via a Deploy Hook |
+| `.github/workflows/deploy.yml` | only redirects the old github.io/amit-sh address to Vercel |
 
 ### Everyday updates
 - **Content** (jobs, projects, bio): edit `src/data.js`, push.
@@ -268,7 +271,7 @@ if you tagged it, as a new node in your knowledge graph. Hands-off and consisten
 
 ## 8. Suggestion form → Notion (with bot protection)
 
-**Why it needs a helper:** the site is static (GitHub Pages). A browser can't hold
+**Why it needs a helper:** the site is static (no server of its own). A browser can't hold
 your Notion token or write to Notion directly without exposing the secret. So a
 tiny serverless function sits in between. Code is in `workers/` (a free Cloudflare
 Worker).
@@ -286,7 +289,7 @@ Worker).
    wrangler secret put NOTION_SUGGESTIONS_DB   # the Suggestions database id
    ```
 3. **Lock the origin:** in `workers/wrangler.toml` set `ALLOWED_ORIGIN` to your
-   site (`https://xX-its-amit-Xx.github.io`) and redeploy.
+   site (`https://amit-sh.vercel.app`) and redeploy.
 4. **Point the form at it:** set `FORM_ENDPOINT` in `src/pages.jsx` to the Worker
    URL Wrangler prints (e.g. `https://amit-sh-recipe-form.<you>.workers.dev`).
    Push. Submissions now create Notion pages.
@@ -384,8 +387,8 @@ edges.
 ### Blog auto-population
 
 - **Substack is already wired:** posts appear via RSS on every build. The only
-  gap is freshness. The cron runs daily, so change it to every 3 hours
-  (`cron: "0 */3 * * *"`). It costs nothing on a public repo.
+  gap is freshness. The Vercel cron rebuilds daily (Vercel's Hobby plan allows
+  one cron run per day; Pro allows more frequent schedules).
 - **LinkedIn has no public feed for personal posts** (the official API needs an
   approved app, and scraping breaks LinkedIn's Terms of Service). ToS-safe routes, best first:
   1. **Write once, publish from Substack.** Draft in Notion → publish on
@@ -398,12 +401,12 @@ edges.
      feed in `fetch-blog.mjs`. Fastest to set up, and it breaks whenever LinkedIn
      changes its HTML.
 - **Instant publishing (optional):** any tool that can make an HTTP call (Zapier's
-  "new RSS item", a Notion button) can hit GitHub's `workflow_dispatch` API to
+  "new RSS item", a Notion button) can POST to the Vercel Deploy Hook URL to
   rebuild immediately instead of waiting for the cron.
 
 ### Suggested rollout
 1. Add `updates.json` + the fan-out in `build-data.mjs` (small change; no new deps).
-2. Bump the cron to every 3 hours.
+2. (Optional) Upgrade the rebuild cadence if daily isn't fresh enough.
 3. Use channel A for a week; add B or C only if you find yourself wanting them.
 
 ### Weekly Notion sync (agents → Notion → site)
@@ -465,3 +468,18 @@ friendly "brain offline" reply.
 - **Personality/rules:** the `persona` prompt in `workers/chat.js` (redeploy after edits).
 - **Suggested questions + offline answers:** the `HYPE` and `ROAST` lists in `src/chat.jsx`.
 - **Model:** `GROQ_MODEL` in `chat.wrangler.toml`.
+
+---
+
+## 12. Hosting, previews, and secrets (Vercel)
+
+- **Production:** every push to `main` deploys to <https://amit-sh.vercel.app>.
+- **Previews:** every push to any other branch gets its own URL, listed in the Vercel
+  dashboard (and on GitHub next to the commit). Preview URLs require logging in
+  to Vercel (Deployment Protection), so drafts stay private; production is public.
+- **Daily refresh:** `vercel.json` runs `/api/rebuild` at 12:00 UTC, which pings the
+  Deploy Hook in `DEPLOY_HOOK_URL`. `CRON_SECRET` blocks outside callers.
+- **Secrets** (Notion, vault, etc.) now live in Vercel → Settings → Environment
+  Variables. Changes apply to the *next* build.
+- **Old address:** `.github/workflows/deploy.yml` publishes a redirect page to
+  GitHub Pages so old `xx-its-amit-xx.github.io/amit-sh` links forward here.

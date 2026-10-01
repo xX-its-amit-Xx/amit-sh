@@ -4,11 +4,11 @@ compatibility_date = "2024-11-01"
 
 [vars]
 # Comma-separated list of sites allowed to call the chatbot.
-ALLOWED_ORIGIN = "https://xX-its-amit-Xx.github.io,https://xx-its-amit-xx.github.io"
+ALLOWED_ORIGIN = "https://amit-sh.vercel.app"
 # Any chat model your Groq account offers (see console.groq.com/docs/models).
 GROQ_MODEL = "llama-3.3-70b-versatile"
 # Where the bot reads its facts (edited by the weekly Notion sync).
-FACTS_URL = "https://xx-its-amit-xx.github.io/amit-sh/chat-facts.txt"
+FACTS_URL = "https://amit-sh.vercel.app/chat-facts.txt"
 
 # Secret (set with `wrangler secret put GROQ_API_KEY -c chat.wrangler.toml`,
 # never commit it):

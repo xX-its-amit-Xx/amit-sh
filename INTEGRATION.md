@@ -288,8 +288,10 @@ Worker).
    wrangler secret put NOTION_TOKEN            # your integration secret
    wrangler secret put NOTION_SUGGESTIONS_DB   # the Suggestions database id
    ```
-3. **Lock the origin:** in `workers/wrangler.toml` set `ALLOWED_ORIGIN` to your
-   site (`https://amit-sh.vercel.app`) and redeploy.
+3. **Lock the origin:** `ALLOWED_ORIGIN` must be your site, `https://amit-sh.vercel.app`
+   (already set in `workers/wrangler.toml` and, as of Oct 2026, in the Cloudflare
+   dashboard → Workers & Pages → amit-sh-recipe-form → Settings → Variables).
+   If you ever move domains, change it there; no redeploy of the site needed.
 4. **Point the form at it:** set `FORM_ENDPOINT` in `src/pages.jsx` to the Worker
    URL Wrangler prints (e.g. `https://amit-sh-recipe-form.<you>.workers.dev`).
    Push. Submissions now create Notion pages.

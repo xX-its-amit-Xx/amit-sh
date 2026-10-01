@@ -440,34 +440,28 @@ weekly run sweep up everything else.
 
 ## 11. The "ask about Amit" chatbot (Groq)
 
-The floating 💬 on every page is `src/chat.jsx`. It sends messages to a tiny
-Cloudflare Worker (`workers/chat.js`) that holds your **Groq API key as a secret**
-and forwards requests to Groq's chat API with a fixed persona prompt and facts list.
+The floating 💬 on every page is `src/chat.jsx`. It posts to the site's own
+Vercel Function, `api/chat.js`, which holds your **Groq API key** as an
+environment variable and relays to Groq's chat API with a fixed persona prompt.
 
-**Why a Worker?** The site is static: anything in its JavaScript can be read
-by any visitor. A key in the page would be copied and drained within days. The
-Worker keeps it server-side and also locks requests to your site's origin, caps
-message length and history, and (optionally) rate-limits per IP.
+**Why a server function?** Anything in the page's JavaScript can be read by any
+visitor, so a key there would be copied and drained. The function keeps it
+server-side, accepts only same-site requests, caps message length/history, and
+applies a best-effort per-IP limit.
 
-### Deploy (once, ~5 min)
-```bash
-cd workers
-wrangler deploy -c chat.wrangler.toml            # prints https://amit-sh-chat.<you>.workers.dev
-wrangler secret put GROQ_API_KEY -c chat.wrangler.toml   # paste the key when prompted
-```
-If the printed URL differs from `CHAT_ENDPOINT` in `src/chat.jsx`, update it and push.
+### Turn it on
+Vercel → project **amit-sh** → Settings → Environment Variables → add
+`GROQ_API_KEY` (from console.groq.com → API Keys), then redeploy. Optional:
+`GROQ_MODEL` to pick a different Groq model.
 
-**Before it's deployed** the widget still works in "offline mode": the suggested
-hype/roast questions have hand-written answers, and free-form questions get a
-friendly "brain offline" reply.
+Until the key is set, the widget runs in "offline mode": the suggested hype/roast
+questions have hand-written answers; free-form questions get a friendly reply.
 
 ### Editing it
-- **Facts:** `public/chat-facts.txt` (one `- ` line per fact). The Worker re-reads it
-  from the live site every ~10 min, so edits ship with a normal push, no redeploy needed.
-  The weekly Notion sync appends new facts here automatically.
-- **Personality/rules:** the `persona` prompt in `workers/chat.js` (redeploy after edits).
+- **Facts:** `public/chat-facts.txt` (one `- ` line per fact), bundled into the
+  function at build time. The weekly Notion sync appends new facts automatically.
+- **Personality/rules:** the `SYSTEM` prompt in `api/chat.js`.
 - **Suggested questions + offline answers:** the `HYPE` and `ROAST` lists in `src/chat.jsx`.
-- **Model:** `GROQ_MODEL` in `chat.wrangler.toml`.
 
 ---
 

@@ -1,4 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "crons": [{ "path": "/api/rebuild", "schedule": "0 12 * * *" }]
+  "crons": [{ "path": "/api/rebuild", "schedule": "0 12 * * *" }],
+  "functions": {
+    "api/chat.js": { "includeFiles": "public/chat-facts.txt" }
+  }
 }

@@ -1,5 +1,5 @@
 # Facts the amit.sh chatbot may use. One fact per line, starting with "- ".
-# The weekly Notion sync keeps this current; the chat Worker re-reads it every ~10 min.
+# The weekly Notion sync keeps this current; it's bundled into api/chat.js on each build.
 - Amit Shenoy, 22. Konkani, Mangalorean roots, grew up in Massachusetts.
 - B.S. Bioengineering (Computational, Systems & Synthetic Biology), math minor, Northeastern University, Dec 2025. GPA 3.91, graduated early.
 - Now: research intern working on agentic AI and biomedical knowledge graphs with the Broad Institute and Prof. Benjamin Gyori's lab (Northeastern). Building agent workflows and evaluation benchmarks.

@@ -3,11 +3,11 @@ import { useApp } from "./store.jsx";
 import { palette, MONO, SANS } from "./theme.js";
 
 // ── "ask about amit" chatbot ─────────────────────────────────────────────────
-// A floating terminal-style chat. Messages go to a Cloudflare Worker
-// (workers/chat.js) that holds the Groq API key — the key never ships in the
-// site. Until the Worker is deployed (or if it's down), the suggested
-// questions still get hand-written answers, so the widget is never broken.
-const CHAT_ENDPOINT = "https://amit-sh-chat.ashenoy000.workers.dev";
+// A floating terminal-style chat. Messages go to the site's own Vercel
+// Function (api/chat.js), which holds the Groq API key — the key never ships
+// in the page. If the function is unavailable (no key yet, local dev), the
+// suggested questions still get hand-written answers, so it's never broken.
+const CHAT_ENDPOINT = "/api/chat";
 
 // Suggested questions: half hype, half roast. Each has an offline answer.
 const HYPE = [

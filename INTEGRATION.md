@@ -465,6 +465,19 @@ questions have hand-written answers; free-form questions get a friendly reply.
 - **Personality/rules:** the `SYSTEM` prompt in `api/chat.js`.
 - **Suggested questions + offline answers:** the `HYPE` and `ROAST` lists in `src/chat.jsx`.
 
+### What the bot can look up (retrieval)
+At build time `scripts/fetch-knowledge.mjs` collects text into `api/_knowledge.js`:
+- **Other sites** listed in `integrations.config.json → chatKnowledge.sites`
+  (Rooftop Rangers, Route9WebCo, Just Another Studios). Pages are read as plain
+  HTML; content a site draws with JavaScript needs its data file in `extraScripts`.
+- **Recipes** from the Notion meal database (`src/generated/wellness.json`).
+- **Workout plan** from the Notion page in `notion.workoutPageId` (needs `NOTION_TOKEN`).
+
+Per question, `api/chat.js` scores every passage with TF-IDF and adds the best few
+to the prompt as REFERENCE. Visit `/api/chat` in a browser to see how many passages
+each source contributed (no content shown). The daily rebuild keeps it fresh.
+To add a source, add a site to `chatKnowledge.sites` and push.
+
 ---
 
 ## 12. Hosting, previews, and secrets (Vercel)

@@ -13,11 +13,37 @@
   },
   "notion": {
     "mealsDbEnv": "NOTION_MEALS_DB",
-    "workoutsDbEnv": "NOTION_WORKOUTS_DB"
+    "workoutsDbEnv": "NOTION_WORKOUTS_DB",
+    "workoutPageId": "382b647699e881b0b236d759e85573ff",
+    "workoutTitle": "Periodized Plan 3",
+    "workoutUrl": "https://picayune-replace-c1a.notion.site/Periodized-Plan-3-382b647699e881b0b236d759e85573ff"
   },
   "obsidian": {
     "repo": "",
     "branch": "main",
     "tokenEnv": "VAULT_TOKEN"
+  },
+  "chatKnowledge": {
+    "_comment": "Sites the chatbot learns from at build time (scripts/fetch-knowledge.mjs).",
+    "sites": [
+      {
+        "name": "Rooftop Rangers",
+        "url": "https://therooftoprangers.com/",
+        "maxPages": 8
+      },
+      {
+        "name": "Route9WebCo",
+        "url": "https://route9web.com/",
+        "maxPages": 8
+      },
+      {
+        "name": "Just Another Studios",
+        "url": "https://justanotherstudios.vercel.app/",
+        "maxPages": 4,
+        "extraScripts": [
+          "js/data.js"
+        ]
+      }
+    ]
   }
 }

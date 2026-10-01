@@ -4,7 +4,8 @@
 import { loadConfig, writeGenerated, log } from "./lib.mjs";
 import { fetchGithub } from "./fetch-github.mjs";
 import { fetchBlog } from "./fetch-blog.mjs";
-import { fetchNotion } from "./fetch-notion.mjs";
+import { fetchNotion, fetchWorkout } from "./fetch-notion.mjs";
+import { fetchKnowledge } from "./fetch-knowledge.mjs";
 import { fetchObsidian } from "./fetch-obsidian.mjs";
 
 const TASKS = [
@@ -12,6 +13,9 @@ const TASKS = [
   { name: "blog.json", run: fetchBlog },
   { name: "wellness.json", run: fetchNotion },
   { name: "graph.json", run: fetchObsidian },
+  { name: "workout.json", run: fetchWorkout },
+  // last: reads the JSON above and writes api/_knowledge.js for the chatbot
+  { name: "chat knowledge", run: fetchKnowledge },
 ];
 
 const cfg = await loadConfig();

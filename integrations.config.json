@@ -33,8 +33,9 @@
       },
       {
         "name": "Route9WebCo",
-        "url": "https://route9web.com/",
-        "maxPages": 8
+        "url": "https://route-9-web-co.vercel.app/",
+        "maxPages": 10,
+        "_comment": "route9web.com wasn't resolving (Oct 2026); switch back once the custom domain works"
       },
       {
         "name": "Just Another Studios",

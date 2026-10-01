@@ -6,7 +6,8 @@
 //
 // Env vars (Vercel → Project → Settings → Environment Variables):
 //   GROQ_API_KEY — required
-//   GROQ_MODEL   — optional, defaults to llama-3.3-70b-versatile
+//   GROQ_MODEL   — optional, defaults to llama-3.3-70b-versatile; if Groq has
+//                  retired it, a current chat model is picked automatically
 //
 // Abuse guards, so nobody turns the key into their free LLM:
 //   • same-origin only (the site's own pages, production or preview)
@@ -61,20 +62,52 @@ export default async function handler(req, res) {
     .map((m) => ({ role: m.role, content: m.content.slice(0, 600) }));
   if (!turns.length || turns[turns.length - 1].role !== "user") return res.status(400).json({ error: "no question" });
 
+  const key = process.env.GROQ_API_KEY.trim().replace(/^["']|["']$/g, "");
+  const messages = [{ role: "system", content: SYSTEM }, ...turns];
+  let r = await complete(key, model || process.env.GROQ_MODEL?.trim() || "llama-3.3-70b-versatile", messages);
+
+  // Groq retires models regularly. If ours is gone, pick a current one and retry.
+  if (r.status === 404 || (r.status === 400 && /model/i.test(r.error))) {
+    const next = await pickModel(key);
+    if (next) {
+      model = next;
+      r = await complete(key, model, messages);
+    }
+  }
+  if (!r.ok) {
+    console.error(`groq error ${r.status}: ${r.error.slice(0, 300)}`);
+    return res.status(502).json({ error: `upstream ${r.status}` });
+  }
+  return res.status(200).json({ reply: r.reply || "I blanked. Classic Amit energy." });
+}
+
+let model = null; // model picked at runtime after a retirement, reused per instance
+
+async function complete(key, name, messages) {
   const r = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
-    headers: { Authorization: `Bearer ${process.env.GROQ_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: process.env.GROQ_MODEL || "llama-3.3-70b-versatile",
-      messages: [{ role: "system", content: SYSTEM }, ...turns],
-      max_tokens: 350,
-      temperature: 0.8,
-    }),
+    headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ model: name, messages, max_tokens: 350, temperature: 0.8 }),
   });
-  if (!r.ok) return res.status(502).json({ error: `upstream ${r.status}` });
+  if (!r.ok) return { ok: false, status: r.status, error: await r.text() };
   const data = await r.json();
-  const reply = data.choices?.[0]?.message?.content?.trim() || "I blanked. Classic Amit energy.";
-  return res.status(200).json({ reply });
+  return { ok: true, reply: data.choices?.[0]?.message?.content?.trim() };
+}
+
+// Prefer known-good chat models, else any listed model that isn't audio/safety-only.
+const PREFERRED = ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant"];
+async function pickModel(key) {
+  try {
+    const r = await fetch("https://api.groq.com/openai/v1/models", { headers: { Authorization: `Bearer ${key}` } });
+    if (!r.ok) return null;
+    const ids = ((await r.json()).data || []).filter((m) => m.active !== false).map((m) => m.id);
+    const chat = ids.filter((id) => !/whisper|tts|guard|playai|orpheus|distil/i.test(id));
+    const pick = PREFERRED.find((id) => chat.includes(id)) || chat[0] || null;
+    console.log(`groq: switching to model ${pick}`);
+    return pick;
+  } catch {
+    return null;
+  }
 }
 
 function safeJson(s) {
